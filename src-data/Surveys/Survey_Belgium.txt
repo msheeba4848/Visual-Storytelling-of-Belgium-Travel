@@ -1,0 +1,1617 @@
+;========================================================================
+; Script généré par COSI 22/01/2004 14:46
+; Etude c:\flash03\dec203\eurobel\001 "EURO BELGIQUE"
+; Exportation ASCII <EURO> "FICHIER EURO  ascii "
+;
+;
+; Correspondance de noms de variables générées <- variables d'origine :
+;    NUML          <- NUML
+;    BL            <- BL
+;    ZEAT          <- ZEAT
+;    HAB9          <- HAB9
+;    B0            <- BL
+;    SEXE          <- SEXE
+;    AGQ           <- AGQ
+;    AGE8          <- AGE8
+;    LIEN          <- LIEN
+;    NPFQ          <- NPFQ
+;    B1            <- BL
+;    RS4           <- RS4
+;    B2            <- BL
+;    RS14          <- RS14
+;    B3            <- BL
+;    RS20          <- RS20
+;    RS21          <- RS21
+;    RS22          <- RS22
+;    RS22B         <- RS22B
+;    B4            <- BL
+;    RS30          <- RS30
+;    B5            <- BL
+;    PCSI1         <- PCSI1
+;    PCSC2         <- PCSC2
+;    B6            <- BL
+;    E15           <- E15
+;    B7            <- BL
+;    PIE           <- PIE
+;    K1            <- K1
+;    BL1           <- BL1
+;    K1L1          <- K1L1
+;    B8            <- BL
+;    K3            <- K3
+;    QFRA[8]       <- QFRA[8]
+;    QALL[8]       <- QALL[8]
+;    QAUT[8]       <- QAUT[8]
+;    QBEL[8]       <- QBEL[8]
+;    QESP[8]       <- QESP[8]
+;    QFIN[8]       <- QFIN[8]
+;    QGRE[8]       <- QGRE[8]
+;    QIRL[8]       <- QIRL[8]
+;    QITA[8]       <- QITA[8]
+;    QLUX[8]       <- QLUX[8]
+;    QPAYB[8]      <- QPAYB[8]
+;    QPOR[8]       <- QPOR[8]
+;    Q19           <- Q19
+;    PENF          <- PENF
+;
+;========================================================================
+[Etude]
+Titre = EURO BELGIQUE
+Client = 
+Rebut = REBUT
+Total = TOTAL
+
+;========================================================================
+[Source]
+Type = ASCII
+Fichier = EURBEL.ASC
+
+;========================================================================
+[Niveau]
+N0 = "INDIVIDU"
+
+;========================================================================
+[PlanSaisie]
+NUML          = Saisie(1-4)
+BL            = Saisie(5-6)
+ZEAT          = Saisie(7)
+HAB9          = Saisie(8)
+B0            = Saisie(9)
+SEXE          = Saisie(10)
+AGQ           = Saisie(11-12)
+AGE8          = Saisie(13)
+LIEN          = Saisie(14)
+NPFQ          = Saisie(15)
+B1            = Saisie(16-17)
+RS4           = Saisie(18)
+B2            = Saisie(19-28)
+RS14          = Saisie(29)
+B3            = Saisie(30-37)
+RS20          = Saisie(38)
+RS21          = Saisie(39)
+RS22          = Saisie(40)
+RS22B         = Saisie(41)
+B4            = Saisie(42-75)
+RS30          = Saisie(76)
+B5            = Saisie(77-80)
+PCSI1         = Saisie(81-82)
+PCSC2         = Saisie(83-84)
+B6            = Saisie(85-86)
+E15           = Saisie(87)
+B7            = Saisie(88)
+PIE           = Saisie(89-96)
+K1            = Saisie(97)
+BL1           = Saisie(98-101)
+K1L1          = Saisie(102-161)
+B8            = Saisie(162-165)
+K3            = Saisie(166-178 / parRang)
+QFRA[8]       = Saisie(179-180 / Pas=2)
+QALL[8]       = Saisie(195-196 / Pas=2)
+QAUT[8]       = Saisie(211-212 / Pas=2)
+QBEL[8]       = Saisie(227-228 / Pas=2)
+QESP[8]       = Saisie(243-244 / Pas=2)
+QFIN[8]       = Saisie(259-260 / Pas=2)
+QGRE[8]       = Saisie(275-276 / Pas=2)
+QIRL[8]       = Saisie(291-292 / Pas=2)
+QITA[8]       = Saisie(307-308 / Pas=2)
+QLUX[8]       = Saisie(323-324 / Pas=2)
+QPAYB[8]      = Saisie(339-340 / Pas=2)
+QPOR[8]       = Saisie(355-356 / Pas=2)
+Q19           = Saisie(371-373)
+PENF          = Saisie(374-377 / parRang)
+
+;========================================================================
+[Variable]
+V = NUML L(4) "N de questionnaire"
+F = Saisie(1-4)
+
+V = BL L(2) "BL"
+F = Saisie(5-6)
+
+V = ZEAT S(1-5) "REGION Nielsen"
+F = Saisie(7)
+L = 1 - 5
+      1 / Nielsen I  (Nord Ouest)
+      2 / Nielsen II (Nord Est)
+      3 / Nielsen III (Centre)
+      4 / Nielsen IV  (Sud Ouest)
+      5 / Nielsen V (Sud Est)
+
+V = HAB9 S(1-4) "Catégorie d'agglomération (en 9) "
+F = Saisie(8)
+L = 1 - 4
+      1 / Habitat 1 (Grandes villes)
+      2 / Habitat 2 (Zones urbaines)
+      3 / Habitat 3 (Zones secondaires)
+      4 / Habitat 4 (Zones rurales)
+
+V = B0 L(1) "BL"
+F = Saisie(9)
+
+V = SEXE S(1-2) "Sexe de l'interviewé(e) "
+F = Saisie(10)
+L = 1 - 2
+      1 / HOMME
+      2 / FEMME
+
+V = AGQ S(1-99) "Quel âge avez-vous ?"
+F = Saisie(11-12)
+L = 1 - 99
+      1 / 001
+      2 / 002
+      3 / 003
+      4 / 004
+      5 / 005
+      6 / 006
+      7 / 007
+      8 / 008
+      9 / 009
+     10 / 010
+     11 / 011
+     12 / 012
+     13 / 013
+     14 / 014
+     15 / 015
+     16 / 016
+     17 / 017
+     18 / 018
+     19 / 019
+     20 / 020
+     21 / 021
+     22 / 022
+     23 / 023
+     24 / 024
+     25 / 025
+     26 / 026
+     27 / 027
+     28 / 028
+     29 / 029
+     30 / 030
+     31 / 031
+     32 / 032
+     33 / 033
+     34 / 034
+     35 / 035
+     36 / 036
+     37 / 037
+     38 / 038
+     39 / 039
+     40 / 040
+     41 / 041
+     42 / 042
+     43 / 043
+     44 / 044
+     45 / 045
+     46 / 046
+     47 / 047
+     48 / 048
+     49 / 049
+     50 / 050
+     51 / 051
+     52 / 052
+     53 / 053
+     54 / 054
+     55 / 055
+     56 / 056
+     57 / 057
+     58 / 058
+     59 / 059
+     60 / 060
+     61 / 061
+     62 / 062
+     63 / 063
+     64 / 064
+     65 / 065
+     66 / 066
+     67 / 067
+     68 / 068
+     69 / 069
+     70 / 070
+     71 / 071
+     72 / 072
+     73 / 073
+     74 / 074
+     75 / 075
+     76 / 076
+     77 / 077
+     78 / 078
+     79 / 079
+     80 / 080
+     81 / 081
+     82 / 082
+     83 / 083
+     84 / 084
+     85 / 085
+     86 / 086
+     87 / 087
+     88 / 088
+     89 / 089
+     90 / 090
+     91 / 091
+     92 / 092
+     93 / 093
+     94 / 094
+     95 / 095
+     96 / 096
+     97 / 097
+     98 / 098
+     99 / 099
+    Rebut / Rebut
+    Total / Total
+
+V = AGE8 S(1-6) "Age de l'interviewé"
+F = Saisie(13)
+L = 1 - 6
+      1 / 15 - 17 ANS
+      2 / 18 - 24 ANS
+      3 / 25 - 34 ANS
+      4 / 35 - 49 ANS
+      5 / 50 - 64 ANS
+      6 / 65 ET +
+
+V = LIEN S(1-2) "chef de famille"
+F = Saisie(14)
+L = 1 - 2
+      1 / OUI
+      2 / NON
+
+V = NPFQ S(1-9) "Nombre de personnes dans le foyer"
+F = Saisie(15)
+L = 1 - 9
+      1 / 001
+      2 / 002
+      3 / 003
+      4 / 004
+      5 / 005
+      6 / 006
+      7 / 007
+      8 / 008
+      9 / 009
+    Rebut / Rebut
+    Total / Total
+
+V = B1 L(2) "BL"
+F = Saisie(16-17)
+
+V = RS4 S(1-2) "RS4. Statut professionnel - Répondant"
+F = Saisie(18)
+L = 1 - 2
+      1 / ...A SON COMPTE
+      2 / ...SALARIE
+
+V = B2 L(10) "BL"
+F = Saisie(19-28)
+
+V = RS14 S(1-2) "RS14. Statut professionnel - Chef de ménage"
+F = Saisie(29)
+L = 1 - 2
+      1 / ...A SON COMPTE
+      2 / ...SALARIE
+
+V = B3 L(8) "BL"
+F = Saisie(30-37)
+
+V = RS20 S(1-2) "RS20. Vivez-vous en couple actuellement ?"
+F = Saisie(38)
+L = 1 - 2
+      1 / Oui
+      2 / Non
+
+V = RS21 S(1-3) "RS21. Quelle est votre situation de famille au sens légal ? Etes-vous ..."
+F = Saisie(39)
+L = 1 - 3
+      1 / MARIE OU VIVANT MARITALEMENT
+      2 / CELIBATAIRE
+      3 / VEUF,DIVORCE,SEPARE
+
+V = RS22 S(1-7) "RS22. Plus haut diplôme obtenu par le répondant"
+F = Saisie(40)
+L = 1 - 7
+      1 / Primaire
+      2 / Secondaire (général, technique ou artistique) inférieur
+      3 / Secondaire (général, technique ou artistique) Supérieur
+      4 / Secondaire professionnel inférieur
+      5 / Secondaire professionnel Supérieur
+      6 / Supérieur non universitaire
+      7 / Supérieur universitaire
+
+V = RS22B S(1-7) "RS22b. Plus haut diplôme obtenu par le Chef de ménage"
+F = Saisie(41)
+L = 1 - 7
+      1 / Primaire
+      2 / Secondaire (général, technique ou artistique) inférieur
+      3 / Secondaire (général, technique ou artistique) Supérieur
+      4 / Secondaire professionnel inférieur
+      5 / Secondaire professionnel Supérieur
+      6 / Supérieur non universitaire
+      7 / Supérieur universitaire
+
+V = B4 L(34) "BL"
+F = Saisie(42-75)
+
+V = RS30 S(1-2) "RS30. Etes-vous le responsable des achats au sein de votre foyer ? "
+F = Saisie(76)
+L = 1 - 2
+      1 / Oui
+      2 / Non
+
+V = B5 L(4) "BL"
+F = Saisie(77-80)
+
+V = PCSI1 S(1-20) "PROFESSION DE L'INTERVIEWE"
+F = Saisie(81-82)
+L = 1 - 20
+      1 / petit agriculteur (moins de 15 ha)
+      2 / agriculteur (important) (15 ha ou plus)
+      3 / artisan, commerçant avec 5 salariés ou moins
+      4 / industriel, gros commerçant avec 6 salariés ou plus
+      5 / profession libérale ou nécessitant qualification (médecin, avocat, expert-comptable, …)
+      6 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 5 salariés ou moins
+      7 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 6 à 10 salariés
+      8 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 11 salariés ou plus
+      9 / cadre moyen ne faisant pas partie de la direction générale, responsable de 5 salariés ou moins
+     10 / cadre moyen ne faisant pas partie de la direction générale, responsable de 6 salariés ou plus
+     11 / autres, principalement travail de bureau
+     12 / autres, pas travail de bureau (infirmière, instituteur, policier, ..)
+     13 / ouvrier qualifié, contremaître
+     14 / ouvrier non qualifié, manœuvre
+     15 / invalide
+     16 / pensionné/retraité
+     17 / étudiant
+     18 / ménagère
+     19 / chômeur
+     20 / rentier
+    Rebut / NSP-SR
+
+V = PCSC2 S(1-20) "PROFESSION DU CHEF DE FAMILLE"
+F = Saisie(83-84)
+L = 1 - 20
+      1 / petit agriculteur (moins de 15 ha)
+      2 / agriculteur (important) (15 ha ou plus)
+      3 / artisan, commerçant avec 5 salariés ou moins
+      4 / industriel, gros commerçant avec 6 salariés ou plus
+      5 / profession libérale ou nécessitant qualification (médecin, avocat, expert-comptable, …)
+      6 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 5 salariés ou moins
+      7 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 6 à 10 salariés
+      8 / membre de la direction générale, cadre supérieur (directeur, administrateur, ..) responsable de 11 salariés ou plus
+      9 / cadre moyen ne faisant pas partie de la direction générale, responsable de 5 salariés ou moins
+     10 / cadre moyen ne faisant pas partie de la direction générale, responsable de 6 salariés ou plus
+     11 / autres, principalement travail de bureau
+     12 / autres, pas travail de bureau (infirmière, instituteur, policier, ..)
+     13 / ouvrier qualifié, contremaître
+     14 / ouvrier non qualifié, manœuvre
+     15 / invalide
+     16 / pensionné/retraité
+     17 / étudiant
+     18 / ménagère
+     19 / chômeur
+     20 / rentier
+    Rebut / NSP-SR
+
+V = B6 L(2) "BL"
+F = Saisie(85-86)
+
+V = E15 S(1-2) "Présence d'enfants de - de 15 ans"
+F = Saisie(87)
+L = 1 - 2
+      1 / OUI
+      2 / NON
+    Rebut / rebut
+
+V = B7 L(1) "BL"
+F = Saisie(88)
+
+V = PIE Q "PIE"
+F = Saisie(89-96)
+
+V = K1 S(1-5) "K1.Changeons de sujet. Nous allons maintenant parler de l'Euro et plus particulière ment de la circulation des pièces dans la zone euro. J'aimerais que nous regardions ensemble si vous-même vous av ez dans votre porte-monnaie ou sur vous des pièces en Eur"
+F = Saisie(97)
+L = 1 - 5
+      1 / Oui, accepte de montrer les pièces
+      2 / Non, déclare ne pas avoir de pièces Euro (françaises ou étra ngères)
+      3 / Non, refuse de montrer les pièces
+      4 / Non, autre cas
+      5 / [nsp]
+
+V = BL1 L(4) "BL1"
+F = Saisie(98-101)
+
+V = K1L1 L(60) "K1b. Précisez : "
+F = Saisie(102-161)
+
+V = B8 L(4) "BL"
+F = Saisie(162-165)
+
+V = K3 M(1-13) "K3. ENQUETEUR : UNE FOIS LES PIECES DE L'INTERVIEWE POSEES, VOUS DEVEZ REGARDER SUR LA PLANCHE QUELS SONT LES PAYS OU IL Y A DES PIECES DEPOSEES PUIS ENREGISTRER SES PAYS. VOUS NE DEVEZ PAS TOUCHE R AUX PIECES POUR LE MOMENT. S'IL Y A DES PIECES QUI N'ON"
+F = Saisie(166-178 / parRang)
+L = 1 - 13
+      1 / FRANCE
+      2 / ALLEMAGNE
+      3 / AUTRICHE
+      4 / BELGIQUE
+      5 / ESPAGNE
+      6 / FINLANDE
+      7 / GRECE
+      8 / IRLANDE
+      9 / ITALIE
+     10 / LUXEMBOURG
+     11 / PAYS-BAS / HOLLANDE
+     12 / PORTUGAL
+     13 / AUTRES EUROS NON IDENTIFIES
+
+V = QFRA[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FRANCE "
+F = Saisie(179-180 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QALL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ALLEMAGNE "
+F = Saisie(195-196 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QAUT[8] S(0-99) "ENREGISTRER LES PIECES DE : L'AUTRICHE "
+F = Saisie(211-212 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QBEL[8] S(0-99) "ENREGISTRER LES PIECES DE : LA BELGIQUE "
+F = Saisie(227-228 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QESP[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ESPAGNE "
+F = Saisie(243-244 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QFIN[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FINLANDE "
+F = Saisie(259-260 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QGRE[8] S(0-99) "ENREGISTRER LES PIECES DE : LA GRECE "
+F = Saisie(275-276 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QIRL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'IRLANDE "
+F = Saisie(291-292 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QITA[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ITALIE "
+F = Saisie(307-308 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QLUX[8] S(0-99) "ENREGISTRER LES PIECES DE : LE LUXEMBOURG "
+F = Saisie(323-324 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPAYB[8] S(0-99) "ENREGISTRER LES PIECES DE : LES PAYS-BAS / LA HOLLANDE "
+F = Saisie(339-340 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPOR[8] S(0-99) "ENREGISTRER LES PIECES DE : LE PORTUGAL "
+F = Saisie(355-356 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = Q19 S(1-999) "Arrondissements :"
+F = Saisie(371-373)
+L = 1 - 999
+      1 / Anvers,
+      2 / Malines,
+      3 / Turnhout,
+      4 / Bxl Capitale,
+      5 / Hal Vilvoorde,
+      6 / Louvain,
+      7 / Nivelles,
+      8 / Bruges,
+      9 / Dixmude,
+     10 / Ypres,
+     11 / Courtrai,
+     12 / Ostende,
+     13 / Roulers,
+     14 / Tielt,
+     15 / Furnes,
+     16 / Alost,
+     17 / Termonde,
+     18 / Eeklo,
+     19 / Gand,
+     20 / Audenarde,
+     21 / St Nicolas,
+     22 / Ath,
+     23 / Charleroi,
+     24 / Mons,
+     25 / Mouscron,
+     26 / Soignies,
+     27 / Thuin,
+     28 / Tournai,
+     29 / Huy,
+     30 / Liege,
+     31 / Verviers,
+     32 / Waremme,
+     33 / Hasselt,
+     34 / Maaseik,
+     35 / Tongres,
+     36 / Arlon,
+     37 / Bastogne,
+     38 / Marche en Famenne,
+     39 / Neufchateau,
+     40 / Virton,
+     41 / Dinant,
+     42 / Namur,
+     43 / Philippeville,
+     44 / 
+     45 / 
+     46 / 
+     47 / 
+     48 / 
+     49 / 
+     50 / 
+     51 / 
+     52 / 
+     53 / 
+     54 / 
+     55 / 
+     56 / 
+     57 / 
+     58 / 
+     59 / 
+     60 / 
+     61 / 
+     62 / 
+     63 / 
+     64 / 
+     65 / 
+     66 / 
+     67 / 
+     68 / 
+     69 / 
+     70 / 
+     71 / 
+     72 / 
+     73 / 
+     74 / 
+     75 / 
+     76 / 
+     77 / 
+     78 / 
+     79 / 
+     80 / 
+     81 / 
+     82 / 
+     83 / 
+     84 / 
+     85 / 
+     86 / 
+     87 / 
+     88 / 
+     89 / 
+     90 / 
+     91 / 
+     92 / 
+     93 / 
+     94 / 
+     95 / 
+     96 / 
+     97 / 
+     98 / 
+     99 / 
+    100 / 
+    101 / 
+    102 / 
+    103 / 
+    104 / 
+    105 / 
+    106 / 
+    107 / 
+    108 / 
+    109 / 
+    110 / 
+    111 / 
+    112 / 
+    113 / 
+    114 / 
+    115 / 
+    116 / 
+    117 / 
+    118 / 
+    119 / 
+    120 / 
+    121 / 
+    122 / 
+    123 / 
+    124 / 
+    125 / 
+    126 / 
+    127 / 
+    128 / 
+    129 / 
+    130 / 
+    131 / 
+    132 / 
+    133 / 
+    134 / 
+    135 / 
+    136 / 
+    137 / 
+    138 / 
+    139 / 
+    140 / 
+    141 / 
+    142 / 
+    143 / 
+    144 / 
+    145 / 
+    146 / 
+    147 / 
+    148 / 
+    149 / 
+    150 / 
+    151 / 
+    152 / 
+    153 / 
+    154 / 
+    155 / 
+    156 / 
+    157 / 
+    158 / 
+    159 / 
+    160 / 
+    161 / 
+    162 / 
+    163 / 
+    164 / 
+    165 / 
+    166 / 
+    167 / 
+    168 / 
+    169 / 
+    170 / 
+    171 / 
+    172 / 
+    173 / 
+    174 / 
+    175 / 
+    176 / 
+    177 / 
+    178 / 
+    179 / 
+    180 / 
+    181 / 
+    182 / 
+    183 / 
+    184 / 
+    185 / 
+    186 / 
+    187 / 
+    188 / 
+    189 / 
+    190 / 
+    191 / 
+    192 / 
+    193 / 
+    194 / 
+    195 / 
+    196 / 
+    197 / 
+    198 / 
+    199 / 
+    200 / 
+    201 / 
+    202 / 
+    203 / 
+    204 / 
+    205 / 
+    206 / 
+    207 / 
+    208 / 
+    209 / 
+    210 / 
+    211 / 
+    212 / 
+    213 / 
+    214 / 
+    215 / 
+    216 / 
+    217 / 
+    218 / 
+    219 / 
+    220 / 
+    221 / 
+    222 / 
+    223 / 
+    224 / 
+    225 / 
+    226 / 
+    227 / 
+    228 / 
+    229 / 
+    230 / 
+    231 / 
+    232 / 
+    233 / 
+    234 / 
+    235 / 
+    236 / 
+    237 / 
+    238 / 
+    239 / 
+    240 / 
+    241 / 
+    242 / 
+    243 / 
+    244 / 
+    245 / 
+    246 / 
+    247 / 
+    248 / 
+    249 / 
+    250 / 
+    251 / 
+    252 / 
+    253 / 
+    254 / 
+    255 / 
+    256 / 
+    257 / 
+    258 / 
+    259 / 
+    260 / 
+    261 / 
+    262 / 
+    263 / 
+    264 / 
+    265 / 
+    266 / 
+    267 / 
+    268 / 
+    269 / 
+    270 / 
+    271 / 
+    272 / 
+    273 / 
+    274 / 
+    275 / 
+    276 / 
+    277 / 
+    278 / 
+    279 / 
+    280 / 
+    281 / 
+    282 / 
+    283 / 
+    284 / 
+    285 / 
+    286 / 
+    287 / 
+    288 / 
+    289 / 
+    290 / 
+    291 / 
+    292 / 
+    293 / 
+    294 / 
+    295 / 
+    296 / 
+    297 / 
+    298 / 
+    299 / 
+    300 / 
+    301 / 
+    302 / 
+    303 / 
+    304 / 
+    305 / 
+    306 / 
+    307 / 
+    308 / 
+    309 / 
+    310 / 
+    311 / 
+    312 / 
+    313 / 
+    314 / 
+    315 / 
+    316 / 
+    317 / 
+    318 / 
+    319 / 
+    320 / 
+    321 / 
+    322 / 
+    323 / 
+    324 / 
+    325 / 
+    326 / 
+    327 / 
+    328 / 
+    329 / 
+    330 / 
+    331 / 
+    332 / 
+    333 / 
+    334 / 
+    335 / 
+    336 / 
+    337 / 
+    338 / 
+    339 / 
+    340 / 
+    341 / 
+    342 / 
+    343 / 
+    344 / 
+    345 / 
+    346 / 
+    347 / 
+    348 / 
+    349 / 
+    350 / 
+    351 / 
+    352 / 
+    353 / 
+    354 / 
+    355 / 
+    356 / 
+    357 / 
+    358 / 
+    359 / 
+    360 / 
+    361 / 
+    362 / 
+    363 / 
+    364 / 
+    365 / 
+    366 / 
+    367 / 
+    368 / 
+    369 / 
+    370 / 
+    371 / 
+    372 / 
+    373 / 
+    374 / 
+    375 / 
+    376 / 
+    377 / 
+    378 / 
+    379 / 
+    380 / 
+    381 / 
+    382 / 
+    383 / 
+    384 / 
+    385 / 
+    386 / 
+    387 / 
+    388 / 
+    389 / 
+    390 / 
+    391 / 
+    392 / 
+    393 / 
+    394 / 
+    395 / 
+    396 / 
+    397 / 
+    398 / 
+    399 / 
+    400 / 
+    401 / 
+    402 / 
+    403 / 
+    404 / 
+    405 / 
+    406 / 
+    407 / 
+    408 / 
+    409 / 
+    410 / 
+    411 / 
+    412 / 
+    413 / 
+    414 / 
+    415 / 
+    416 / 
+    417 / 
+    418 / 
+    419 / 
+    420 / 
+    421 / 
+    422 / 
+    423 / 
+    424 / 
+    425 / 
+    426 / 
+    427 / 
+    428 / 
+    429 / 
+    430 / 
+    431 / 
+    432 / 
+    433 / 
+    434 / 
+    435 / 
+    436 / 
+    437 / 
+    438 / 
+    439 / 
+    440 / 
+    441 / 
+    442 / 
+    443 / 
+    444 / 
+    445 / 
+    446 / 
+    447 / 
+    448 / 
+    449 / 
+    450 / 
+    451 / 
+    452 / 
+    453 / 
+    454 / 
+    455 / 
+    456 / 
+    457 / 
+    458 / 
+    459 / 
+    460 / 
+    461 / 
+    462 / 
+    463 / 
+    464 / 
+    465 / 
+    466 / 
+    467 / 
+    468 / 
+    469 / 
+    470 / 
+    471 / 
+    472 / 
+    473 / 
+    474 / 
+    475 / 
+    476 / 
+    477 / 
+    478 / 
+    479 / 
+    480 / 
+    481 / 
+    482 / 
+    483 / 
+    484 / 
+    485 / 
+    486 / 
+    487 / 
+    488 / 
+    489 / 
+    490 / 
+    491 / 
+    492 / 
+    493 / 
+    494 / 
+    495 / 
+    496 / 
+    497 / 
+    498 / 
+    499 / 
+    500 / 
+    501 / 
+    502 / 
+    503 / 
+    504 / 
+    505 / 
+    506 / 
+    507 / 
+    508 / 
+    509 / 
+    510 / 
+    511 / 
+    512 / 
+    513 / 
+    514 / 
+    515 / 
+    516 / 
+    517 / 
+    518 / 
+    519 / 
+    520 / 
+    521 / 
+    522 / 
+    523 / 
+    524 / 
+    525 / 
+    526 / 
+    527 / 
+    528 / 
+    529 / 
+    530 / 
+    531 / 
+    532 / 
+    533 / 
+    534 / 
+    535 / 
+    536 / 
+    537 / 
+    538 / 
+    539 / 
+    540 / 
+    541 / 
+    542 / 
+    543 / 
+    544 / 
+    545 / 
+    546 / 
+    547 / 
+    548 / 
+    549 / 
+    550 / 
+    551 / 
+    552 / 
+    553 / 
+    554 / 
+    555 / 
+    556 / 
+    557 / 
+    558 / 
+    559 / 
+    560 / 
+    561 / 
+    562 / 
+    563 / 
+    564 / 
+    565 / 
+    566 / 
+    567 / 
+    568 / 
+    569 / 
+    570 / 
+    571 / 
+    572 / 
+    573 / 
+    574 / 
+    575 / 
+    576 / 
+    577 / 
+    578 / 
+    579 / 
+    580 / 
+    581 / 
+    582 / 
+    583 / 
+    584 / 
+    585 / 
+    586 / 
+    587 / 
+    588 / 
+    589 / 
+    590 / 
+    591 / 
+    592 / 
+    593 / 
+    594 / 
+    595 / 
+    596 / 
+    597 / 
+    598 / 
+    599 / 
+    600 / 
+    601 / 
+    602 / 
+    603 / 
+    604 / 
+    605 / 
+    606 / 
+    607 / 
+    608 / 
+    609 / 
+    610 / 
+    611 / 
+    612 / 
+    613 / 
+    614 / 
+    615 / 
+    616 / 
+    617 / 
+    618 / 
+    619 / 
+    620 / 
+    621 / 
+    622 / 
+    623 / 
+    624 / 
+    625 / 
+    626 / 
+    627 / 
+    628 / 
+    629 / 
+    630 / 
+    631 / 
+    632 / 
+    633 / 
+    634 / 
+    635 / 
+    636 / 
+    637 / 
+    638 / 
+    639 / 
+    640 / 
+    641 / 
+    642 / 
+    643 / 
+    644 / 
+    645 / 
+    646 / 
+    647 / 
+    648 / 
+    649 / 
+    650 / 
+    651 / 
+    652 / 
+    653 / 
+    654 / 
+    655 / 
+    656 / 
+    657 / 
+    658 / 
+    659 / 
+    660 / 
+    661 / 
+    662 / 
+    663 / 
+    664 / 
+    665 / 
+    666 / 
+    667 / 
+    668 / 
+    669 / 
+    670 / 
+    671 / 
+    672 / 
+    673 / 
+    674 / 
+    675 / 
+    676 / 
+    677 / 
+    678 / 
+    679 / 
+    680 / 
+    681 / 
+    682 / 
+    683 / 
+    684 / 
+    685 / 
+    686 / 
+    687 / 
+    688 / 
+    689 / 
+    690 / 
+    691 / 
+    692 / 
+    693 / 
+    694 / 
+    695 / 
+    696 / 
+    697 / 
+    698 / 
+    699 / 
+    700 / 
+    701 / 
+    702 / 
+    703 / 
+    704 / 
+    705 / 
+    706 / 
+    707 / 
+    708 / 
+    709 / 
+    710 / 
+    711 / 
+    712 / 
+    713 / 
+    714 / 
+    715 / 
+    716 / 
+    717 / 
+    718 / 
+    719 / 
+    720 / 
+    721 / 
+    722 / 
+    723 / 
+    724 / 
+    725 / 
+    726 / 
+    727 / 
+    728 / 
+    729 / 
+    730 / 
+    731 / 
+    732 / 
+    733 / 
+    734 / 
+    735 / 
+    736 / 
+    737 / 
+    738 / 
+    739 / 
+    740 / 
+    741 / 
+    742 / 
+    743 / 
+    744 / 
+    745 / 
+    746 / 
+    747 / 
+    748 / 
+    749 / 
+    750 / 
+    751 / 
+    752 / 
+    753 / 
+    754 / 
+    755 / 
+    756 / 
+    757 / 
+    758 / 
+    759 / 
+    760 / 
+    761 / 
+    762 / 
+    763 / 
+    764 / 
+    765 / 
+    766 / 
+    767 / 
+    768 / 
+    769 / 
+    770 / 
+    771 / 
+    772 / 
+    773 / 
+    774 / 
+    775 / 
+    776 / 
+    777 / 
+    778 / 
+    779 / 
+    780 / 
+    781 / 
+    782 / 
+    783 / 
+    784 / 
+    785 / 
+    786 / 
+    787 / 
+    788 / 
+    789 / 
+    790 / 
+    791 / 
+    792 / 
+    793 / 
+    794 / 
+    795 / 
+    796 / 
+    797 / 
+    798 / 
+    799 / 
+    800 / 
+    801 / 
+    802 / 
+    803 / 
+    804 / 
+    805 / 
+    806 / 
+    807 / 
+    808 / 
+    809 / 
+    810 / 
+    811 / 
+    812 / 
+    813 / 
+    814 / 
+    815 / 
+    816 / 
+    817 / 
+    818 / 
+    819 / 
+    820 / 
+    821 / 
+    822 / 
+    823 / 
+    824 / 
+    825 / 
+    826 / 
+    827 / 
+    828 / 
+    829 / 
+    830 / 
+    831 / 
+    832 / 
+    833 / 
+    834 / 
+    835 / 
+    836 / 
+    837 / 
+    838 / 
+    839 / 
+    840 / 
+    841 / 
+    842 / 
+    843 / 
+    844 / 
+    845 / 
+    846 / 
+    847 / 
+    848 / 
+    849 / 
+    850 / 
+    851 / 
+    852 / 
+    853 / 
+    854 / 
+    855 / 
+    856 / 
+    857 / 
+    858 / 
+    859 / 
+    860 / 
+    861 / 
+    862 / 
+    863 / 
+    864 / 
+    865 / 
+    866 / 
+    867 / 
+    868 / 
+    869 / 
+    870 / 
+    871 / 
+    872 / 
+    873 / 
+    874 / 
+    875 / 
+    876 / 
+    877 / 
+    878 / 
+    879 / 
+    880 / 
+    881 / 
+    882 / 
+    883 / 
+    884 / 
+    885 / 
+    886 / 
+    887 / 
+    888 / 
+    889 / 
+    890 / 
+    891 / 
+    892 / 
+    893 / 
+    894 / 
+    895 / 
+    896 / 
+    897 / 
+    898 / 
+    899 / 
+    900 / 
+    901 / 
+    902 / 
+    903 / 
+    904 / 
+    905 / 
+    906 / 
+    907 / 
+    908 / 
+    909 / 
+    910 / 
+    911 / 
+    912 / 
+    913 / 
+    914 / 
+    915 / 
+    916 / 
+    917 / 
+    918 / 
+    919 / 
+    920 / 
+    921 / 
+    922 / 
+    923 / 
+    924 / 
+    925 / 
+    926 / 
+    927 / 
+    928 / 
+    929 / 
+    930 / 
+    931 / 
+    932 / 
+    933 / 
+    934 / 
+    935 / 
+    936 / 
+    937 / 
+    938 / 
+    939 / 
+    940 / 
+    941 / 
+    942 / 
+    943 / 
+    944 / 
+    945 / 
+    946 / 
+    947 / 
+    948 / 
+    949 / 
+    950 / 
+    951 / 
+    952 / 
+    953 / 
+    954 / 
+    955 / 
+    956 / 
+    957 / 
+    958 / 
+    959 / 
+    960 / 
+    961 / 
+    962 / 
+    963 / 
+    964 / 
+    965 / 
+    966 / 
+    967 / 
+    968 / 
+    969 / 
+    970 / 
+    971 / 
+    972 / 
+    973 / 
+    974 / 
+    975 / 
+    976 / 
+    977 / 
+    978 / 
+    979 / 
+    980 / 
+    981 / 
+    982 / 
+    983 / 
+    984 / 
+    985 / 
+    986 / 
+    987 / 
+    988 / 
+    989 / 
+    990 / 
+    991 / 
+    992 / 
+    993 / 
+    994 / 
+    995 / 
+    996 / 
+    997 / 
+    998 / 
+    999 / 
+
+V = PENF M(1-4) "PRESENCE D'ENFANTS "
+F = Saisie(374-377 / parRang)
+L = 1 - 4
+      1 / de moins de 12 ans
+      2 / de 12 à 14 ans
+      3 / de 15 à 17 ans
+      4 / de 18 ans et plus
+    Rebut / Aucun
+
+

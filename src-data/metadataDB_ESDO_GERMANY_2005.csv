@@ -1,0 +1,119 @@
+SEXE;1) Man 2) Woman
+AGQ;Age in years
+NPF5;Size of the household in 5 categories : 1) 1 person 2) 2 persons 3) 3 persons 4) 4 persons 5) 5 persons and more
+g10;City of residence size in 10 categories : 0) up to 1.999 inhabitants 1) 2.000 up to 2.999 inhabitants 2) 3.000 up to 4.999 inhabitants 3) 5.000 up to  9.999 inhabitants 4) 10.000 up to 19.999 inhabitants 5) 20.000 up to 49.999 inhabitants 6) 50.000 up to  99.999 inhabitants 7) 100.000 up to 199.999 inhabitants 8) 200.000 up to 499.999 inhabitants 9) 500.000 inhabitants or more
+LAND;Region (17 Länder) : 1) Schleswig-Holstein 2) Hamburg 3) Bremen 4) Berlin (West) 5) Lower Saxony 6) North-Rhine-Westphalia 7) Hessen 8) Rhineland-Palatinate 9) Saarland 10) Baden-Württemberg 11) Bavaria 12) Mecklenburg-Lower-Pomerania 13) Saxony-Anhalt 14) Brandenburg 15) Thuringia 16) Saxony 17) Berlin (East)
+N3_03;Location of residence place according to the Eurostat NUTS 3 (2003) nomenclature
+g13;Marital status in 4 categories:  1) single 2) living together without marriage certificate 3) married 4) divorced/widowed/living separated
+penf;Children in household in 2 categories: 1) Yes 2) No
+g18;The respondent is the purchasing manager in the household: 1) Yes 2) No
+g6;The respondent is the head of the household: 1) Yes 2) No
+g23;Highest diploma obtained according to the following response modalities: 1) Pre-primary 2) Primary 3) Secondary 4) Higher 5) University degree 9) NA
+g25;Highest diploma obtained by the head of household, if the head of household is not the respondent, according to the following response modalities: 1) Pre-primary 2) Primary 3) Secondary 4) Higher 5) University degree 9) NA
+g3;Working status of the respondent in 3 categories: 1) Yes, full-time 2) Yes, part-time 3) No
+g3c;Working status of the head of household, if the head of household is not the respondent, in 3 categories: 1) Yes, full-time 2) Yes, part-time 3) No
+pcsi11;Profession of respondent in 11 categories: 1) farmer 2) liberal profession 3) shopkeeper / owner of a firm 4) civil servants / government employees 5) employees (incl. employed management) 6) workers 7) students 8) apprentice / military service 9) housewife 10) retired 11) unemployed
+pcsi;Profession of respondent in 6 categories: 1) workers 2) employees (incl. employed  management) 3) civil servants / government employees 4) liberal profession / shopkeeper / owner of a firm 5) farmers 6) unemployed
+ACTI;Profession of respondent in 10 categories: 1) self-employed 2) farmer / fisherman 3) white collar 4) blue collar 5) student 6) housewife 7) retired 8) temporarily not working 9) other profession 10) NA
+revr;Income of respondent in 12 categories: 1) NA / refused   2) up to 499 €   3) 500 € up to 749 €    4) 750 € up to 999 €   5) 1.000 € up to 1.249 €   6) 1.250 € up to 1.499 €   7) 1.500 € up to 1.999 €   8) 2.000 € up to 2.499 €   9) 2.500 € up to 2.999 €   10) 3.000 € up to 3.499 €   11) 3.500 € up to 3.999 €   12) 4.000 € or more
+pcsc11;Profession of the head of household, if the head of household is not the respondent, in 11 categories: 1) farmer 2) liberal profession 3) shopkeeper / owner of a firm 4) civil servants / government employees 5) employees (incl. employed management) 6) workers 7) students 8) apprentice / military service 9) housewife 10) retired 11) unemployed
+pcsc;Profession of  the head of household, if the head of household is not the respondent, in 6 categories: 1) workers 2) employees (incl. employed  management) 3) civil servants / government employees 4) liberal profession / shopkeeper / owner of a firm 5) farmers 6) unemployed
+ACTC;Profession of the head of household, if the head of household is not the respondent, in 10 categories: 1) self-employed 2) farmer / fisherman 3) white collar 4) blue collar 5) student 6) housewife 7) retired 8) temporarily not working 9) other profession 10) NA
+revh;Income of  the head of household, if the head of household is not the respondent, in 12 categories: 1) NA / refused   2) up to 499 €   3) 500 € up to 749 €    4) 750 € up to 999 €   5) 1.000 € up to 1.249 €   6) 1.250 € up to 1.499 €   7) 1.500 € up to 1.999 €   8) 2.000 € up to 2.499 €   9) 2.500 € up to 2.999 €   10) 3.000 € up to 3.499 €   11) 3.500 € up to 3.999 €   12) 4.000 € or more
+pip;Weighting variable constructed by ISL
+QFRA_1c;Number of 01 cent coins minted in France contained in the wallet
+QFRA_2c;Number of 02 cents coins minted in France contained in the wallet
+QFRA_5c;Number of 05 cents coins minted in France contained in the wallet
+QFRA_10c;Number of 10 cents coins minted in France contained in the wallet
+QFRA_20c;Number of 20 cents coins minted in France contained in the wallet
+QFRA_50c;Number of 50 cents coins minted in France contained in the wallet
+QFRA_1e;Number of 1 euro coins minted in France contained in the wallet
+QFRA_2e;Number of 2 euros coins minted in France contained in the wallet
+QALL_1c;Number of 01 cent coins minted in Germany contained in the wallet
+QALL_2c;Number of 02 cents coins minted in Germany contained in the wallet
+QALL_5c;Number of 05 cents coins minted in Germany contained in the wallet
+QALL_10c;Number of 10 cents coins minted in Germany contained in the wallet
+QALL_20c;Number of 20 cents coins minted in Germany contained in the wallet
+QALL_50c;Number of 50 cents coins minted in Germany contained in the wallet
+QALL_1e;Number of 1 euro coins minted in Germany contained in the wallet
+QALL_2e;Number of 2 euros coins minted in Germany contained in the wallet
+QAUT_1c;Number of 01 cent coins minted in Austria contained in the wallet
+QAUT_2c;Number of 02 cents coins minted in Austria contained in the wallet
+QAUT_5c;Number of 05 cents coins minted in Austria contained in the wallet
+QAUT_10c;Number of 10 cents coins minted in Austria contained in the wallet
+QAUT_20c;Number of 20 cents coins minted in Austria contained in the wallet
+QAUT_50c;Number of 50 cents coins minted in Austria contained in the wallet
+QAUT_1e;Number of 1 euro coins minted in Austria contained in the wallet
+QAUT_2e;Number of 2 euros coins minted in Austria contained in the wallet
+QBEL_1c;Number of 01 cent coins minted in Belgium contained in the wallet
+QBEL_2c;Number of 02 cents coins minted in Belgium contained in the wallet
+QBEL_5c;Number of 05 cents coins minted in Belgium contained in the wallet
+QBEL_10c;Number of 10 cents coins minted in Belgium contained in the wallet
+QBEL_20c;Number of 20 cents coins minted in Belgium contained in the wallet
+QBEL_50c;Number of 50 cents coins minted in Belgium contained in the wallet
+QBEL_1e;Number of 1 euro coins minted in Belgium contained in the wallet
+QBEL_2e;Number of 2 euros coins minted in Belgium contained in the wallet
+QESP_1c;Number of 01 cent coins minted in Spain contained in the wallet
+QESP_2c;Number of 02 cents coins minted in Spain contained in the wallet
+QESP_5c;Number of 05 cents coins minted in Spain contained in the wallet
+QESP_10c;Number of 10 cents coins minted in Spain contained in the wallet
+QESP_20c;Number of 20 cents coins minted in Spain contained in the wallet
+QESP_50c;Number of 50 cents coins minted in Spain contained in the wallet
+QESP_1e;Number of 1 euro coins minted in Spain contained in the wallet
+QESP_2e;Number of 2 euros coins minted in Spain contained in the wallet
+QFIN_1c;Number of 01 cent coins minted in Finland contained in the wallet
+QFIN_2c;Number of 02 cents coins minted in Finland contained in the wallet
+QFIN_5c;Number of 05 cents coins minted in Finland contained in the wallet
+QFIN_10c;Number of 10 cents coins minted in Finland contained in the wallet
+QFIN_20c;Number of 20 cents coins minted in Finland contained in the wallet
+QFIN_50c;Number of 50 cents coins minted in Finland contained in the wallet
+QFIN_1e;Number of 1 euro coins minted in Finland contained in the wallet
+QFIN_2e;Number of 2 euros coins minted in Finland contained in the wallet
+QGRE_1c;Number of 01 cent coins minted in Greece contained in the wallet
+QGRE_2c;Number of 02 cents coins minted in Greece contained in the wallet
+QGRE_5c;Number of 05 cents coins minted in Greece contained in the wallet
+QGRE_10c;Number of 10 cents coins minted in Greece contained in the wallet
+QGRE_20c;Number of 20 cents coins minted in Greece contained in the wallet
+QGRE_50c;Number of 50 cents coins minted in Greece contained in the wallet
+QGRE_1e;Number of 1 euro coins minted in Greece contained in the wallet
+QGRE_2e;Number of 2 euros coins minted in Greece contained in the wallet
+QIRL_1c;Number of 01 cent coins minted in Ireland contained in the wallet
+QIRL_2c;Number of 02 cents coins minted in Ireland contained in the wallet
+QIRL_5c;Number of 05 cents coins minted in Ireland contained in the wallet
+QIRL_10c;Number of 10 cents coins minted in Ireland contained in the wallet
+QIRL_20c;Number of 20 cents coins minted in Ireland contained in the wallet
+QIRL_50c;Number of 50 cents coins minted in Ireland contained in the wallet
+QIRL_1e;Number of 1 euro coins minted in Ireland contained in the wallet
+QIRL_2e;Number of 2 euros coins minted in Ireland contained in the wallet
+QITA_1c;Number of 01 cent coins minted in Italy contained in the wallet
+QITA_2c;Number of 02 cents coins minted in Italy contained in the wallet
+QITA_5c;Number of 05 cents coins minted in Italy contained in the wallet
+QITA_10c;Number of 10 cents coins minted in Italy contained in the wallet
+QITA_20c;Number of 20 cents coins minted in Italy contained in the wallet
+QITA_50c;Number of 50 cents coins minted in Italy contained in the wallet
+QITA_1e;Number of 1 euro coins minted in Italy contained in the wallet
+QITA_2e;Number of 2 euros coins minted in Italy contained in the wallet
+QLUX_1c;Number of 01 cent coins minted in Luxembourg contained in the wallet
+QLUX_2c;Number of 02 cents coins minted in Luxembourg contained in the wallet
+QLUX_5c;Number of 05 cents coins minted in Luxembourg contained in the wallet
+QLUX_10c;Number of 10 cents coins minted in Luxembourg contained in the wallet
+QLUX_20c;Number of 20 cents coins minted in Luxembourg contained in the wallet
+QLUX_50c;Number of 50 cents coins minted in Luxembourg contained in the wallet
+QLUX_1e;Number of 1 euro coins minted in Luxembourg contained in the wallet
+QLUX_2e;Number of 2 euros coins minted in Luxembourg contained in the wallet
+QPAYB_1c;Number of 01 cent coins minted in The Netherlands contained in the wallet
+QPAYB_2c;Number of 02 cents coins minted in The Netherlands contained in the wallet
+QPAYB_5c;Number of 05 cents coins minted in The Netherlands contained in the wallet
+QPAYB_10c;Number of 10 cents coins minted in The Netherlands contained in the wallet
+QPAYB_20c;Number of 20 cents coins minted in The Netherlands contained in the wallet
+QPAYB_50c;Number of 50 cents coins minted in The Netherlands contained in the wallet
+QPAYB_1e;Number of 1 euro coins minted in The Netherlands contained in the wallet
+QPAYB_2e;Number of 2 euros coins minted in The Netherlands contained in the wallet
+QPOR_1c;Number of 01 cent coins minted in Portugal contained in the wallet
+QPOR_2c;Number of 02 cents coins minted in Portugal contained in the wallet
+QPOR_5c;Number of 05 cents coins minted in Portugal contained in the wallet
+QPOR_10c;Number of 10 cents coins minted in Portugal contained in the wallet
+QPOR_20c;Number of 20 cents coins minted in Portugal contained in the wallet
+QPOR_50c;Number of 50 cents coins minted in Portugal contained in the wallet
+QPOR_1e;Number of 1 euro coins minted in Portugal contained in the wallet
+QPOR_2e;Number of 2 euros coins minted in Portugal contained in the wallet

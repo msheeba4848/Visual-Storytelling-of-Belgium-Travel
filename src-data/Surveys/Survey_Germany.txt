@@ -1,0 +1,764 @@
+;========================================================================
+; Script généré par COSI 19/01/2005 15:19
+; Etude c:\flash05\euroall\001 "** 2005 ** EURO ALLEMAGNE"
+; Exportation ASCII <ALLEMC> "FICHIER ALLEMAGNE CSV"
+;
+;
+; Correspondance de noms de variables générées <- variables d'origine :
+;    NUMLX         <- NUMLX
+;    BL            <- BL
+;    SEX           <- SEX
+;    AGQ           <- AGQ
+;    AGE8          <- AGE8
+;    NPF9          <- NPF9
+;    G10           <- G10
+;    G9            <- G9
+;    G13           <- G13
+;    PENF          <- PENF
+;    G18           <- G18
+;    G6            <- G6
+;    G23           <- G23
+;    G25           <- G25
+;    G3            <- G3
+;    G3C           <- G3C
+;    PCSI11        <- PCSI11
+;    PCSI          <- PCSI
+;    ACTI          <- ACTI
+;    REVR          <- REVR
+;    G17R          <- G17R
+;    PCSC11        <- PCSC11
+;    PCSC          <- PCSC
+;    ACTC          <- ACTC
+;    REVH          <- REVH
+;    G17H          <- G17H
+;    G44           <- G44
+;    G49           <- G49
+;    G50           <- G50
+;    G51           <- G51
+;    G63           <- G63
+;    CLASS         <- CLASS
+;    B0            <- BL
+;    B1            <- BL
+;    PI5B          <- PI5B
+;    K1            <- K1
+;    B2            <- BL
+;    B3            <- BL
+;    B4            <- BL
+;    K3            <- K3
+;    QFRA[8]       <- QFRA[8]
+;    QALL[8]       <- QALL[8]
+;    QAUT[8]       <- QAUT[8]
+;    QBEL[8]       <- QBEL[8]
+;    QESP[8]       <- QESP[8]
+;    QFIN[8]       <- QFIN[8]
+;    QGRE[8]       <- QGRE[8]
+;    QIRL[8]       <- QIRL[8]
+;    QITA[8]       <- QITA[8]
+;    QLUX[8]       <- QLUX[8]
+;    QPAYB[8]      <- QPAYB[8]
+;    QPOR[8]       <- QPOR[8]
+;    CODPOS        <- CODPOS
+;
+;========================================================================
+[Etude]
+Titre = ** 2005 ** EURO ALLEMAGNE
+Client = 
+Rebut = REBUT
+Total = TOTAL
+
+;========================================================================
+[Source]
+Type = ASCII /H
+Fichier = EUROAL2.ASC
+
+;========================================================================
+[Niveau]
+N0 = 
+
+;========================================================================
+[PlanSaisie]
+NUMLX         = Saisie(1-4)
+BL            = Saisie(5-9)
+SEX           = Saisie(10)
+AGQ           = Saisie(11-12)
+AGE8          = Saisie(13)
+NPF9          = Saisie(14)
+G10           = Saisie(15)
+G9            = Saisie(16-17)
+G13           = Saisie(18)
+PENF          = Saisie(19)
+G18           = Saisie(20)
+G6            = Saisie(21)
+G23           = Saisie(22)
+G25           = Saisie(23)
+G3            = Saisie(24)
+G3C           = Saisie(25)
+PCSI11        = Saisie(26-27)
+PCSI          = Saisie(28)
+ACTI          = Saisie(29-30)
+REVR          = Saisie(31-32)
+G17R          = Saisie(33)
+PCSC11        = Saisie(34-35)
+PCSC          = Saisie(36)
+ACTC          = Saisie(37-38)
+REVH          = Saisie(39-40)
+G17H          = Saisie(41)
+G44           = Saisie(42)
+G49           = Saisie(43-47 / parRang)
+G50           = Saisie(48)
+G51           = Saisie(49-60 / parRang)
+G63           = Saisie(61-64 / parRang)
+CLASS         = Saisie(65)
+B0            = Saisie(66-75)
+B1            = Saisie(76-88)
+PI5B          = Saisie(89-96)
+K1            = Saisie(97)
+B2            = Saisie(98-127)
+B3            = Saisie(128-157)
+B4            = Saisie(158-165)
+K3            = Saisie(166-178 / parRang)
+QFRA[8]       = Saisie(179-180 / Pas=2)
+QALL[8]       = Saisie(195-196 / Pas=2)
+QAUT[8]       = Saisie(211-212 / Pas=2)
+QBEL[8]       = Saisie(227-228 / Pas=2)
+QESP[8]       = Saisie(243-244 / Pas=2)
+QFIN[8]       = Saisie(259-260 / Pas=2)
+QGRE[8]       = Saisie(275-276 / Pas=2)
+QIRL[8]       = Saisie(291-292 / Pas=2)
+QITA[8]       = Saisie(307-308 / Pas=2)
+QLUX[8]       = Saisie(323-324 / Pas=2)
+QPAYB[8]      = Saisie(339-340 / Pas=2)
+QPOR[8]       = Saisie(355-356 / Pas=2)
+CODPOS        = Saisie(371-375)
+
+;========================================================================
+[Variable]
+V = NUMLX L(4) "NUML"
+F = Saisie(1-4)
+
+V = BL L(5) "BL"
+F = Saisie(5-9)
+
+V = SEX S(1-2) "Sex"
+F = Saisie(10)
+L = 1 - 2
+      1 / MALE
+      2 / FEMALE
+
+V = AGQ S(1-99) "Quel âge avez-vous ?"
+F = Saisie(11-12)
+L = 1 - 99
+      1 / 001
+      2 / 002
+      3 / 003
+      4 / 004
+      5 / 005
+      6 / 006
+      7 / 007
+      8 / 008
+      9 / 009
+     10 / 010
+     11 / 011
+     12 / 012
+     13 / 013
+     14 / 014
+     15 / 015
+     16 / 016
+     17 / 017
+     18 / 018
+     19 / 019
+     20 / 020
+     21 / 021
+     22 / 022
+     23 / 023
+     24 / 024
+     25 / 025
+     26 / 026
+     27 / 027
+     28 / 028
+     29 / 029
+     30 / 030
+     31 / 031
+     32 / 032
+     33 / 033
+     34 / 034
+     35 / 035
+     36 / 036
+     37 / 037
+     38 / 038
+     39 / 039
+     40 / 040
+     41 / 041
+     42 / 042
+     43 / 043
+     44 / 044
+     45 / 045
+     46 / 046
+     47 / 047
+     48 / 048
+     49 / 049
+     50 / 050
+     51 / 051
+     52 / 052
+     53 / 053
+     54 / 054
+     55 / 055
+     56 / 056
+     57 / 057
+     58 / 058
+     59 / 059
+     60 / 060
+     61 / 061
+     62 / 062
+     63 / 063
+     64 / 064
+     65 / 065
+     66 / 066
+     67 / 067
+     68 / 068
+     69 / 069
+     70 / 070
+     71 / 071
+     72 / 072
+     73 / 073
+     74 / 074
+     75 / 075
+     76 / 076
+     77 / 077
+     78 / 078
+     79 / 079
+     80 / 080
+     81 / 081
+     82 / 082
+     83 / 083
+     84 / 084
+     85 / 085
+     86 / 086
+     87 / 087
+     88 / 088
+     89 / 089
+     90 / 090
+     91 / 091
+     92 / 092
+     93 / 093
+     94 / 094
+     95 / 095
+     96 / 096
+     97 / 097
+     98 / 098
+     99 / 099
+    Rebut / Rebut
+    Total / Total
+
+V = AGE8 S(1-5) "Quel âge avez-vous ?"
+F = Saisie(13)
+L = 1 - 5
+      1 / 18-24
+      2 / 25-34
+      3 / 35-49
+      4 / 50-64
+      5 / 65 &+
+
+V = NPF9 S(1-5) "SIZE OF HOUSEHOLD"
+F = Saisie(14)
+L = 1 - 5
+      1 / 1 PERSON
+      2 / 2 PEOPLE
+      3 / 3 PEOPLE
+      4 / 4 PEOPLE
+      5 / 5 PEOPLE OR MORE
+
+V = G10 S(0-9) "SIZE OF COMMUNITY"
+F = Saisie(15)
+L = 0 - 9
+      0 / up to 1.999 inhabitants
+      1 / 2.000 up to 2.999 inhabitants
+      2 / 3.000 up to 4.999 inhabitants
+      3 / 5.000 up to  9.999 inhabitants
+      4 / 10.000 up to 19.999 inhabitants
+      5 / 20.000 up to 49.999 inhabitants
+      6 / 50.000 up to  99.999 inhabitants
+      7 / 100.000 up to 199.999 inhabitants
+      8 / 200.000 up to 499.999 inhabitants
+      9 / 500.000 inhabitants or more
+
+V = G9 S(1-17) "REGIONS"
+F = Saisie(16-17)
+L = 1 - 17
+      1 / Schleswig-Holstein
+      2 / Hamburg
+      3 / Bremen
+      4 / Berlin (West)
+      5 / Lower Saxony
+      6 / North-Rhine-Westphalia
+      7 / Hessen
+      8 / Rhineland-Palatinate
+      9 / Saarland
+     10 / Baden-Württemberg
+     11 / Bavaria
+     12 / Mecklenburg-Lower-Pomerania
+     13 / Saxony-Anhalt
+     14 / Brandenburg
+     15 / Thuringia
+     16 / Saxony
+     17 / Berlin (East)
+
+V = G13 S(1-9) "MARITAL STATUS"
+F = Saisie(18)
+L = 1 - 9
+      1 / single
+      2 / living together without marriage certificate
+      3 / married
+      4 / divorced/widowed/living separated
+      5 / 
+      6 / 
+      7 / 
+      8 / 
+      9 / n.a.
+
+V = PENF S(1-2) "CHILDREN IN HOUSEHOLD"
+F = Saisie(19)
+L = 1 - 2
+      1 / YES
+      2 / NO
+
+V = G18 S(1-2) "RESPONSIBLE FOR HOUSEKEEPING"
+F = Saisie(20)
+L = 1 - 2
+      1 / YES
+      2 / NO
+
+V = G6 S(1-2) "HOH - HEAD OF HOUSEHOLD"
+F = Saisie(21)
+L = 1 - 2
+      1 / YES
+      2 / NO
+
+V = G23 S(1-9) "EDUCATION OF RESPONDENT"
+F = Saisie(22)
+L = 1 - 9
+      1 / PRE-PRIMARY
+      2 / PRIMARY
+      3 / SECONDARY
+      4 / HIGHER
+      5 / UNIVERSITY DEGREE
+      6 / 
+      7 / 
+      8 / 
+      9 / N.A./D.K.
+
+V = G25 S(1-9) "EDUCATION OF HOH"
+F = Saisie(23)
+L = 1 - 9
+      1 / PRE-PRIMARY
+      2 / PRIMARY
+      3 / SECONDARY
+      4 / HIGHER
+      5 / UNIVERSITY DEGREE
+      6 / 
+      7 / 
+      8 / 
+      9 / N.A./D.K.
+
+V = G3 S(1-3) "WORKING STATUS OF RESPONDENT"
+F = Saisie(24)
+L = 1 - 3
+      1 / YES,FULL-TIME
+      2 / YES,PART-TIME
+      3 / NO
+
+V = G3C S(1-3) "WORKING STATUS OF HOH"
+F = Saisie(25)
+L = 1 - 3
+      1 / YES,FULL-TIME
+      2 / YES,PART-TIME
+      3 / NO
+
+V = PCSI11 S(1-11) "Profession OF Respondent"
+F = Saisie(26-27)
+L = 1 - 11
+      1 / farmer
+      2 / liberal profession
+      3 / shopkeeper / owner of a firm
+      4 / civil servants / government employees
+      5 / employees (incl. employed management)
+      6 / workers
+      7 / students
+      8 / apprentice / military service
+      9 / housewife
+     10 / retired
+     11 / unemployed
+
+V = PCSI S(1-6) "Profession OF Respondent"
+F = Saisie(28)
+L = 1 - 6
+      1 / workers
+      2 / employees (incl. employed  management)
+      3 / civil servants / government employees
+      4 / liberal profession / shopkeeper / owner of a firm
+      5 / farmers
+      6 / unemployed
+
+V = ACTI S(1-10) "Profession OF Respondent"
+F = Saisie(29-30)
+L = 1 - 10
+      1 / self-employed
+      2 / farmer / fisherman
+      3 / white collar
+      4 / blue collar
+      5 / student
+      6 / housewife
+      7 / retired
+      8 / temporarily not working
+      9 / other profession
+     10 / d.k./n.a.
+
+V = REVR S(1-12) "INCOME OF Respondent "
+F = Saisie(31-32)
+L = 1 - 12
+      1 / n.a. / refused
+      2 / up to    499 €
+      3 / 500 € up to    749 €
+      4 / 750 € up to    999 €
+      5 / 1.000 € up to 1.249 €
+      6 / 1.250 € up to 1.499 €
+      7 / 1.500 € up to 1.999 €
+      8 / 2.000 € up to 2.499 €
+      9 / 2.500 € up to 2.999 €
+     10 / 3.000 € up to 3.499 €
+     11 / 3.500 € up to 3.999 €
+     12 / 4.000 € or more
+
+V = G17R S(1-9) "INCOME OF Respondent "
+F = Saisie(33)
+L = 1 - 9
+      1 / HIGHT ( 1500 Euro & more )
+      2 / MEDIUM (750 -1499  Euro )
+      3 / LOW  ( < 750 Euro )
+      4 / 
+      5 / 
+      6 / 
+      7 / 
+      8 / 
+      9 / N.A../D.K.
+
+V = PCSC11 S(1-11) "Profession OF HOH"
+F = Saisie(34-35)
+L = 1 - 11
+      1 / farmer
+      2 / liberal profession
+      3 / shopkeeper / owner of a firm
+      4 / civil servants / government employees
+      5 / employees (incl. employed management)
+      6 / workers
+      7 / students
+      8 / apprentice / military service
+      9 / housewife
+     10 / retired
+     11 / unemployed
+
+V = PCSC S(1-6) "Profession of HOH (as weighting sociodemographic)"
+F = Saisie(36)
+L = 1 - 6
+      1 / workers
+      2 / employees (incl. employed  management)
+      3 / civil servants / government employees
+      4 / liberal profession / shopkeeper / owner of a firm
+      5 / farmers
+      6 / unemployed
+
+V = ACTC S(1-10) "Profession OF HOH"
+F = Saisie(37-38)
+L = 1 - 10
+      1 / self-employed
+      2 / farmer / fisherman
+      3 / white collar
+      4 / blue collar
+      5 / student
+      6 / housewife
+      7 / retired
+      8 / temporarily not working
+      9 / other profession
+     10 / d.k./n.a.
+
+V = REVH S(1-12) "INCOME OF HH"
+F = Saisie(39-40)
+L = 1 - 12
+      1 / n.a. / refused
+      2 / up to    499 €
+      3 / 500 € up to    749 €
+      4 / 750 € up to    999 €
+      5 / 1.000 € up to 1.249 €
+      6 / 1.250 € up to 1.499 €
+      7 / 1.500 € up to 1.999 €
+      8 / 2.000 € up to 2.499 €
+      9 / 2.500 € up to 2.999 €
+     10 / 3.000 € up to 3.499 €
+     11 / 3.500 € up to 3.999 €
+     12 / 4.000 € or more
+
+V = G17H S(1-9) "INCOME OF HH"
+F = Saisie(41)
+L = 1 - 9
+      1 / HIGHT ( 1500 Euro & more )
+      2 / MEDIUM (750 -1499  Euro )
+      3 / LOW  ( < 750 Euro )
+      4 / 
+      5 / 
+      6 / 
+      7 / 
+      8 / 
+      9 / N.A../D.K.
+
+V = G44 S(1-3) "New trends and evolution"
+F = Saisie(42)
+L = 1 - 3
+      1 / I'm very interested in
+      2 / I'm particularly interested in
+      3 / I don't worry about
+
+V = G49 M(1-5) "Do you yourself have access to the Internet?"
+F = Saisie(43-47 / parRang)
+L = 1 - 5
+      1 / yes, at home
+      2 / yes, at work / at my workplace
+      3 / yes, at school / university
+      4 / yes, somewhere else
+      5 / no
+
+V = G50 S(1-7) "How often do you personally use the Internet - aside from sending or receiving emails?"
+F = Saisie(48)
+L = 1 - 7
+      1 / daily
+      2 / several times a week
+      3 / once a week
+      4 / two or three times a month
+      5 / once a month
+      6 / less often
+      7 / never
+
+V = G51 M(1-12) "What on this list is currently available in your household?"
+F = Saisie(49-60 / parRang)
+L = 1 - 12
+      1 / PC / desktop PC
+      2 / laptop / notebook
+      3 / 16:9 TV / color TV with 100-hertz technology / color TV with Dolby Surround / flat panel TV
+      4 / DVD-Player
+      5 / CD-Burner / CD-recorder (PC or HiFi)
+      6 / video camera / camcorder
+      7 / digital camera
+      8 / game console (e.g. Playstation, Nintendo, Sega)
+      9 / ISDN-connection
+     10 / at least two cars
+     11 / second home or vacation home / flat
+     12 / none of these
+
+V = G63 M(1-4) "Which of the following devices do you personally own?"
+F = Saisie(61-64 / parRang)
+L = 1 - 4
+      1 / cell phone
+      2 / electronic organizer (PDA)
+      3 / laptop / notebook
+      4 / none of these
+
+V = CLASS S(1-5) "SOCIAL CLASS"
+F = Saisie(65)
+L = 1 - 5
+      1 / A
+      2 / B
+      3 / C
+      4 / D
+      5 / E
+
+V = B0 L(10) "BL"
+F = Saisie(66-75)
+
+V = B1 L(13) "BL"
+F = Saisie(76-88)
+
+V = PI5B Q "WEIGHTING FACTOR"
+F = Saisie(89-96)
+
+V = K1 S(1-5) "K1.Changeons de sujet. Nous allons maintenant parler de l'Euro et plus particulière ment de la circulation des pièces dans la zone euro. J'aimerais que nous regardions ensemble si vous-même vous av ez dans votre porte-monnaie ou sur vous des pièces en Eur"
+F = Saisie(97)
+L = 1 - 5
+      1 / Oui, accepte de montrer les pièces
+      2 / Non, déclare ne pas avoir de pièces Euro (françaises ou étra ngères)
+      3 / Non, refuse de montrer les pièces
+      4 / Non, autre cas
+      5 / [nsp]
+
+V = B2 L(30) "BL"
+F = Saisie(98-127)
+
+V = B3 L(30) "BL"
+F = Saisie(128-157)
+
+V = B4 L(8) "BL"
+F = Saisie(158-165)
+
+V = K3 M(1-13) "K3. ENQUETEUR : UNE FOIS LES PIECES DE L'INTERVIEWE POSEES, VOUS DEVEZ REGAR DER SUR LA PLANCHE QUELS SONT LES PAYS OU IL Y A DES PIECES DEPOSEES PUIS ENREGISTRER SES PAYS. VOUS NE DEVEZ PAS TOUCHE R AUX PIECES POUR LE MOMENT. S'IL Y A DES PIECES QUI N'ON"
+F = Saisie(166-178 / parRang)
+L = 1 - 13
+      1 / FRANCE
+      2 / ALLEMAGNE
+      3 / AUTRICHE
+      4 / BELGIQUE
+      5 / ESPAGNE
+      6 / FINLANDE
+      7 / GRECE
+      8 / IRLANDE
+      9 / ITALIE
+     10 / LUXEMBOURG
+     11 / PAYS-BAS / HOLLANDE
+     12 / PORTUGAL
+     13 / AUTRES EUROS NON IDENTIFIES
+
+V = QFRA[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FRANCE "
+F = Saisie(179-180 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QALL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ALLEMAGNE "
+F = Saisie(195-196 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QAUT[8] S(0-99) "ENREGISTRER LES PIECES DE : L'AUTRICHE "
+F = Saisie(211-212 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QBEL[8] S(0-99) "ENREGISTRER LES PIECES DE : LA BELGIQUE "
+F = Saisie(227-228 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QESP[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ESPAGNE "
+F = Saisie(243-244 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QFIN[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FINLANDE "
+F = Saisie(259-260 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QGRE[8] S(0-99) "ENREGISTRER LES PIECES DE : LA GRECE "
+F = Saisie(275-276 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QIRL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'IRLANDE "
+F = Saisie(291-292 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QITA[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ITALIE "
+F = Saisie(307-308 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QLUX[8] S(0-99) "ENREGISTRER LES PIECES DE : LE LUXEMBOURG "
+F = Saisie(323-324 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPAYB[8] S(0-99) "ENREGISTRER LES PIECES DE : LES PAYS-BAS / LA HOLLANDE "
+F = Saisie(339-340 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPOR[8] S(0-99) "ENREGISTRER LES PIECES DE : LE PORTUGAL "
+F = Saisie(355-356 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = CODPOS L(5) "CODE POSTE"
+F = Saisie(371-375)
+
+

@@ -1,0 +1,957 @@
+;========================================================================
+; Script généré par COSI 10/10/2003 15:51
+; Etude c:\flash03\sept203\923 "FLASH SEPTEMBRE II 2003  CONVERSO"
+; Exportation ASCII <EURO> "FICHIER EURO  ascii "
+;
+; Univers : (EURO = 1)
+;
+; Correspondance de noms de variables générées <- variables d'origine :
+;    NUML          <- NUML
+;    DEP           <- DEP
+;    ZEAT          <- ZEAT
+;    HAB9          <- HAB9
+;    HAB5          <- HAB5
+;    SEXE          <- SEXE
+;    AGQ           <- AGQ
+;    AGE8          <- AGE8
+;    LIEN          <- LIEN
+;    NPFQ          <- NPFQ
+;    ACTI          <- ACTI
+;    RS4           <- RS4
+;    RS5           <- RS5
+;    RS6           <- RS6
+;    RS7           <- RS7
+;    RS9           <- RS9
+;    ACTC          <- ACTC
+;    RS14          <- RS14
+;    RS15          <- RS15
+;    RS16          <- RS16
+;    RS17          <- RS17
+;    RS19          <- RS19
+;    RS20          <- RS20
+;    RS21          <- RS21
+;    RS22          <- RS22
+;    RS22B         <- RS22B
+;    RS23          <- RS23
+;    RS24          <- RS24
+;    RS25          <- RS25
+;    RS26          <- RS26
+;    RS26B         <- RS26B
+;    RS30          <- RS30
+;    XCSPI         <- XCSPI
+;    XCSPC         <- XCSPC
+;    PCSI1         <- PCSI1
+;    PCSC2         <- PCSC2
+;    PCSI          <- PCSI
+;    PCSC          <- PCSC
+;    E15           <- E15
+;    STAN          <- STAN
+;    PIP           <- PIP
+;    K1            <- K1
+;    BL1           <- BL1
+;    K1L1          <- K1L1
+;    K1L2          <- K1L2
+;    K3            <- K3
+;    QFRA[8]       <- QFRA[8]
+;    QALL[8]       <- QALL[8]
+;    QAUT[8]       <- QAUT[8]
+;    QBEL[8]       <- QBEL[8]
+;    QESP[8]       <- QESP[8]
+;    QFIN[8]       <- QFIN[8]
+;    QGRE[8]       <- QGRE[8]
+;    QIRL[8]       <- QIRL[8]
+;    QITA[8]       <- QITA[8]
+;    QLUX[8]       <- QLUX[8]
+;    QPAYB[8]      <- QPAYB[8]
+;    QPOR[8]       <- QPOR[8]
+;    Q19           <- Q19
+;    K5            <- K5
+;    K6            <- K6
+;    K7            <- K7
+;
+;========================================================================
+[Etude]
+Titre = FLASH SEPTEMBRE II 2003  CONVERSO
+Client = 
+Rebut = REBUT
+Total = TOTAL
+
+;========================================================================
+[Source]
+Type = ASCII
+Fichier = EURO09.ASC
+
+;========================================================================
+[Niveau]
+N0 = "INDIVIDU"
+
+;========================================================================
+[PlanSaisie]
+NUML          = Saisie(1-4)
+DEP           = Saisie(5-6)
+ZEAT          = Saisie(7)
+HAB9          = Saisie(8)
+HAB5          = Saisie(9)
+SEXE          = Saisie(10)
+AGQ           = Saisie(11-12)
+AGE8          = Saisie(13)
+LIEN          = Saisie(14)
+NPFQ          = Saisie(15)
+ACTI          = Saisie(16-17)
+RS4           = Saisie(18)
+RS5           = Saisie(19-23)
+RS6           = Saisie(24)
+RS7           = Saisie(25)
+RS9           = Saisie(26)
+ACTC          = Saisie(27-28)
+RS14          = Saisie(29)
+RS15          = Saisie(30-34)
+RS16          = Saisie(35)
+RS17          = Saisie(36)
+RS19          = Saisie(37)
+RS20          = Saisie(38)
+RS21          = Saisie(39)
+RS22          = Saisie(40)
+RS22B         = Saisie(41)
+RS23          = Saisie(42)
+RS24          = Saisie(43)
+RS25          = Saisie(44-45)
+RS26          = Saisie(46-70 / parRang)
+RS26B         = Saisie(71-75 / parRang)
+RS30          = Saisie(76)
+XCSPI         = Saisie(77-78)
+XCSPC         = Saisie(79-80)
+PCSI1         = Saisie(81-82)
+PCSC2         = Saisie(83-84)
+PCSI          = Saisie(85)
+PCSC          = Saisie(86)
+E15           = Saisie(87)
+STAN          = Saisie(88)
+PIP           = Saisie(89-96)
+K1            = Saisie(97)
+BL1           = Saisie(98-101)
+K1L1          = Saisie(102-161)
+K1L2          = Saisie(162-165)
+K3            = Saisie(166-178 / parRang)
+QFRA[8]       = Saisie(179-180 / Pas=2)
+QALL[8]       = Saisie(195-196 / Pas=2)
+QAUT[8]       = Saisie(211-212 / Pas=2)
+QBEL[8]       = Saisie(227-228 / Pas=2)
+QESP[8]       = Saisie(243-244 / Pas=2)
+QFIN[8]       = Saisie(259-260 / Pas=2)
+QGRE[8]       = Saisie(275-276 / Pas=2)
+QIRL[8]       = Saisie(291-292 / Pas=2)
+QITA[8]       = Saisie(307-308 / Pas=2)
+QLUX[8]       = Saisie(323-324 / Pas=2)
+QPAYB[8]      = Saisie(339-340 / Pas=2)
+QPOR[8]       = Saisie(355-356 / Pas=2)
+Q19           = Saisie(371-373)
+K5            = Saisie(374)
+K6            = Saisie(375)
+K7            = Saisie(376)
+
+;========================================================================
+[Variable]
+V = NUML L(4) "NUML"
+F = Saisie(1-4)
+
+V = DEP S(1-95) "Indiquer le numéro du département dans lequel vous travaillez "
+F = Saisie(5-6)
+L = 1 - 95
+      1 / AIN
+      2 / AISNE
+      3 / ALLIER
+      4 / ALPES DE HAUTE PROVENCE
+      5 / HAUTES ALPES
+      6 / ALPES MARITIMES
+      7 / ARDECHE
+      8 / ARDENNES
+      9 / ARIEGE
+     10 / AUBE
+     11 / AUDE
+     12 / AVEYRON
+     13 / BOUCHES DU RHONE
+     14 / CALVADOS
+     15 / CANTAL
+     16 / CHARENTE
+     17 / CHARENTE MARITIME
+     18 / CHER
+     19 / CORREZE
+     20 / CORSE
+     21 / COTE D'OR
+     22 / COTES DU NORD
+     23 / CREUSE
+     24 / DORDOGNE
+     25 / DOUBS
+     26 / DROME
+     27 / EURE
+     28 / EURE ET LOIR
+     29 / FINISTERE
+     30 / GARD
+     31 / HAUTE GARONNE
+     32 / GERS
+     33 / GIRONDE
+     34 / HERAULT
+     35 / ILLE ET VILAINE
+     36 / INDRE
+     37 / INDRE ET LOIRE
+     38 / ISERE
+     39 / JURA
+     40 / LANDES
+     41 / LOIR ET CHER
+     42 / LOIRE
+     43 / HAUTE LOIRE
+     44 / LOIRE ATLANTIQUE
+     45 / LOIRET
+     46 / LOT
+     47 / LOT ET GARONNE
+     48 / LOZERE
+     49 / MAINE ET LOIRE
+     50 / MANCHE
+     51 / MARNE
+     52 / HAUTE MARNE
+     53 / MAYENNE
+     54 / MEURTHE ET MOSELLE
+     55 / MEUSE
+     56 / MORBIHAN
+     57 / MOSELLE
+     58 / NIEVRE
+     59 / NORD
+     60 / OISE
+     61 / ORNE
+     62 / PAS DE CALAIS
+     63 / PUY DE DOME
+     64 / PYRENEES ATLANTIQUE
+     65 / HAUTES PYRENEES
+     66 / PYRENEES ORIENTALES
+     67 / BAS RHIN
+     68 / HAUT RHIN
+     69 / RHONE
+     70 / HAUTE SAONE
+     71 / SAONE ET LOIRE
+     72 / SARTHE
+     73 / SAVOIE
+     74 / HAUTE SAVOIE
+     75 / PARIS
+     76 / SEINE MARITIME
+     77 / SEINE ET MARNE
+     78 / YVELINES
+     79 / DEUX SEVRES
+     80 / SOMME
+     81 / TARN
+     82 / TARN ET GARONNE
+     83 / VAR
+     84 / VAUCLUSE
+     85 / VENDEE
+     86 / VIENNE
+     87 / HAUTE VIENNE
+     88 / VOSGES
+     89 / YONNE
+     90 / BELFORT
+     91 / ESSONNE
+     92 / HAUTS DE SEINE
+     93 / SEINE SAINT DENIS
+     94 / VAL DE MARNE
+     95 / VAL D'OISE
+
+V = ZEAT S(1-9) "REGION ZEAT "
+F = Saisie(7)
+L = 1 - 9
+      1 / Région parisienne
+      2 / Bassin Parisien Est
+      3 / Bassin Parisien Ouest
+      4 / Nord
+      5 / Est
+      6 / Ouest
+      7 / Sud Ouest
+      8 / Sud Est
+      9 / Méditerranée
+
+V = HAB9 S(1-9) "Catégorie d'agglomération (en 9) "
+F = Saisie(8)
+L = 1 - 9
+      1 / Rural
+      2 / 2 A 5
+      3 / 5 A 10
+      4 / 10 A 20
+      5 / 20 A 50
+      6 / 50 A 100
+      7 / 100 A 200
+      8 / > 200 Hab
+      9 / Agglo PARIS
+
+V = HAB5 S(1-5) "Catégorie d'agglomération (en 5) "
+F = Saisie(9)
+L = 1 - 5
+      1 / Rural
+      2 / 2 A 20
+      3 / 20 A 100
+      4 / > 100 Hab
+      5 / Agglo PARIS
+
+V = SEXE S(1-2) "Sexe de l'interviewé(e) "
+F = Saisie(10)
+L = 1 - 2
+      1 / HOMME
+      2 / FEMME
+
+V = AGQ S(1-99) "Quel âge avez-vous ?"
+F = Saisie(11-12)
+L = 1 - 99
+      1 / 001
+      2 / 002
+      3 / 003
+      4 / 004
+      5 / 005
+      6 / 006
+      7 / 007
+      8 / 008
+      9 / 009
+     10 / 010
+     11 / 011
+     12 / 012
+     13 / 013
+     14 / 014
+     15 / 015
+     16 / 016
+     17 / 017
+     18 / 018
+     19 / 019
+     20 / 020
+     21 / 021
+     22 / 022
+     23 / 023
+     24 / 024
+     25 / 025
+     26 / 026
+     27 / 027
+     28 / 028
+     29 / 029
+     30 / 030
+     31 / 031
+     32 / 032
+     33 / 033
+     34 / 034
+     35 / 035
+     36 / 036
+     37 / 037
+     38 / 038
+     39 / 039
+     40 / 040
+     41 / 041
+     42 / 042
+     43 / 043
+     44 / 044
+     45 / 045
+     46 / 046
+     47 / 047
+     48 / 048
+     49 / 049
+     50 / 050
+     51 / 051
+     52 / 052
+     53 / 053
+     54 / 054
+     55 / 055
+     56 / 056
+     57 / 057
+     58 / 058
+     59 / 059
+     60 / 060
+     61 / 061
+     62 / 062
+     63 / 063
+     64 / 064
+     65 / 065
+     66 / 066
+     67 / 067
+     68 / 068
+     69 / 069
+     70 / 070
+     71 / 071
+     72 / 072
+     73 / 073
+     74 / 074
+     75 / 075
+     76 / 076
+     77 / 077
+     78 / 078
+     79 / 079
+     80 / 080
+     81 / 081
+     82 / 082
+     83 / 083
+     84 / 084
+     85 / 085
+     86 / 086
+     87 / 087
+     88 / 088
+     89 / 089
+     90 / 090
+     91 / 091
+     92 / 092
+     93 / 093
+     94 / 094
+     95 / 095
+     96 / 096
+     97 / 097
+     98 / 098
+     99 / 099
+    Rebut / Rebut
+    Total / Total
+
+V = AGE8 S(1-5) "Age de l'interviewé"
+F = Saisie(13)
+L = 1 - 5
+      1 / 18 - 24 ANS
+      2 / 25 - 34 ANS
+      3 / 35 - 49 ANS
+      4 / 50 - 64 ANS
+      5 / 65 ET +
+
+V = LIEN S(1-5) "Quel est votre lien avec le chef de famille ? "
+F = Saisie(14)
+L = 1 - 5
+      1 / LUI-MEME ( CHEF DE FAMILLE )
+      2 / CONJOINT DU CHEF DE FAMILLE
+      3 / ENFANT DU CHEF DE FAMILLE
+      4 / PARENT/BEAU-PARENT DU CHEF DE FAMILLE
+      5 / AUTRE
+
+V = NPFQ Q "E1.-Combien de personnes au total vivent normalement dans votre logement Y COMPRIS VOUS-MEME ? ENQUETEUR : Comptez les absents de courte durée, les enfants placés dans un internat, pensionnat, les militaires du contingent et les malades hospitalisés. "
+F = Saisie(15)
+
+V = ACTI S(1-10) "RS1.Dites-moi à l'aide de cette liste, dans quelle situation vous vous trouvez"
+F = Saisie(16-17)
+L = 1 - 10
+      1 / EXERCE ACTUELLEMENT UNE PROFESSION
+      2 / EST EN LONGUE MALADIE, CONGE DE MATERNITE, CONGE PARENTAL, CONGE SABBATIQUE
+      3 / EST CHOMEUR AYANT DEJA TRAVAILLE
+      4 / EST APPRENTI
+      5 / EST RETRAITE
+      6 / EST CHOMEUR A LA RECHERCHE D'UN PREMIER EMPLOI
+      7 / EST INVALIDE
+      8 / EST ETUDIANT, LYCéEN
+      9 / EST MILITAIRE DU CONTINGENT
+     10 / EST FEMME/HOMME AU FOYER OU SANS PROFESSION
+
+V = RS4 S(1-2) "RS4. Etes-vous (étiez-vous) ... "
+F = Saisie(18)
+L = 1 - 2
+      1 / ...A VOTRE COMPTE
+      2 / ...SALARIE
+
+V = RS5 Q "RS5. Combien de salariés sont actuellement (étaient) employés à temps complet dans votre entreprise ? (sans compter le personnel domestique et les aides familiaux) "
+F = Saisie(19-23)
+
+V = RS6 S(1-3) "RS6. Etes-vous (étiez-vous) salarié ... "
+F = Saisie(24)
+L = 1 - 3
+      1 / ... DE L'ETAT OU D'UNE COLLECTIVITE LOCALE
+      2 / ... D'UNE ENTREPRISE PUBLIQUE
+      3 / ... D'UNE ENTREPRISE PRIVEE
+
+V = RS7 S(1-7) "RS7. Quelle est (était) votre qualification, votre statut ? "
+F = Saisie(25)
+L = 1 - 7
+      1 / CADRE
+      2 / CONTREMAITRE, AGENT DE MAITRISE
+      3 / EMPLOYE, PERSONNEL DE SERVICE
+      4 / OUVRIER QUALIFIE
+      5 / OUVRIER NON QUALIFIE
+      6 / AUTRE (PRECISER)
+      7 / aucune qualification
+
+V = RS9 S(1-2) "RS9. Travaillez-vous... "
+F = Saisie(26)
+L = 1 - 2
+      1 / ... à temps plein
+      2 / ... à temps partiel
+
+V = ACTC S(1-10) "RS11. Dites-moi à l'aide de cette liste, dans quelle situation se trouve le chef de famille"
+F = Saisie(27-28)
+L = 1 - 10
+      1 / EXERCE ACTUELLEMENT UNE PROFESSION
+      2 / EST EN LONGUE MALADIE, CONGE DE MATERNITE, CONGE PARENTAL, CONGE SABBATIQUE
+      3 / EST CHOMEUR AYANT DEJA TRAVAILLE
+      4 / EST APPRENTI
+      5 / EST RETRAITE
+      6 / EST CHOMEUR A LA RECHERCHE D'UN PREMIER EMPLOI
+      7 / EST INVALIDE
+      8 / EST ETUDIANT, LYCEEN
+      9 / EST MILITAIRE DU CONTINGENT
+     10 / EST FEMME/HOMME AU FOYER OU SANS PROFESSION
+
+V = RS14 S(1-2) "RS14. Le chef de famille est-il (était-il) ..."
+F = Saisie(29)
+L = 1 - 2
+      1 / ...A SON COMPTE
+      2 / ...SALARIE
+
+V = RS15 Q "RS15. Combien de salariés sont actuellement (étaient) employés à temps complet dans son entreprise ? (sans compter le personnel domestique et les aides familiaux)"
+F = Saisie(30-34)
+
+V = RS16 S(1-3) "RS16. Le chef de famille est-il (était-il) salarié ..."
+F = Saisie(35)
+L = 1 - 3
+      1 / ... DE L'ETAT OU D'UNE COLLECTIVITE LOCALE
+      2 / ... D'UNE ENTREPRISE PUBLIQUE
+      3 / ... D'UNE ENTREPRISE PRIVEE
+
+V = RS17 S(1-7) "RS17. Quelle est (était) la qualification, le statut du chef de famille ?"
+F = Saisie(36)
+L = 1 - 7
+      1 / CADRE
+      2 / CONTREMAITRE, AGENT DE MAITRISE
+      3 / EMPLOYE, PERSONNEL DE SERVICE
+      4 / OUVRIER QUALIFIE
+      5 / OUVRIER NON QUALIFIE
+      6 / AUTRE (PRECISER)
+      7 / aucune qualification
+
+V = RS19 S(1-2) "RS19. Travaille-t-il..."
+F = Saisie(37)
+L = 1 - 2
+      1 / ... à temps plein
+      2 / ... à mi-temps
+
+V = RS20 S(1-2) "RS20. Vivez-vous en couple actuellement ?"
+F = Saisie(38)
+L = 1 - 2
+      1 / Oui
+      2 / Non
+
+V = RS21 S(1-4) "RS21. Quelle est votre situation de famille au sens légal ? Etes-vous ..."
+F = Saisie(39)
+L = 1 - 4
+      1 / MARIE OU VIVANT MARITALEMENT
+      2 / CELIBATAIRE
+      3 / VEUF
+      4 / DIVORCE,SEPARE
+
+V = RS22 S(1-8) "RS22. Quel est le diplôme le plus élevé que vous ayez obtenu ? "
+F = Saisie(40)
+L = 1 - 8
+      1 / CERTIFICAT D'ETUDES PRIMAIRES (CEP)
+      2 / BEPC
+      3 / CAP - BEP
+      4 / BACCALAUREAT, BP, BT
+      5 / DEUG, DUT, BTS, DIPLOME DES PROFESSIONS SOCIALES OU DE LA SANTE
+      6 / 2 EME, 3 EME CYCLE UNIVERSITAIRE OU GRANDES ECOLES
+      7 / [aucun diplôme]
+      8 / [refus ]
+
+V = RS22B S(1-8) "RS22b. Quel est le diplôme le plus élevé que le chef de famille a obtenu ?"
+F = Saisie(41)
+L = 1 - 8
+      1 / CERTIFICAT D'ETUDES PRIMAIRES (CEP)
+      2 / BEPC
+      3 / CAP - BEP
+      4 / BACCALAUREAT, BP, BT
+      5 / DEUG, DUT, BTS, DIPLOME DES PROFESSIONS SOCIALES OU DE LA SANTE
+      6 / 2 EME, 3 EME CYCLE UNIVERSITAIRE OU GRANDES ECOLES
+      7 / [aucun diplôme]
+      8 / [refus ]
+
+V = RS23 S(1-6) "RS23. L'INTERVIEWE HABITE DANS ..."
+F = Saisie(42)
+L = 1 - 6
+      1 / ... UNE FERME
+      2 / ... UNE MAISON INDIVIDUELLE SANS JARDIN
+      3 / ... UNE MAISON INDIVIDUELLE AVEC JARDIN
+      4 / ... UN APPARTEMENT HLM/ILN
+      5 / ... UN APPARTEMENT AUTRE QUE HLM/ILN
+      6 / ... AUTRE
+
+V = RS24 S(1-4) "RS24. En ce qui concerne votre logement actuel, votre foyer en est-il ... "
+F = Saisie(43)
+L = 1 - 4
+      1 / ...PROPRIETAIRE (y compris copropriétaire et accédant)
+      2 / ...LOCATAIRE
+      3 / ... autre
+      4 / [refus/nsp]
+
+V = RS25 S(1-12) "RS25. REVENUS MENSUELS BRUTS MOYENS"
+F = Saisie(44-45)
+L = 1 - 12
+      1 / < 4000 FF  ou < 609 EUROS
+      2 / 4001-6000 FF ou 610-914 EUROS
+      3 / 6001-8000 FF ou 915-1219 EUROS
+      4 / 8001-10000 F ou 1220-1524 EUROS
+      5 / 10001-12500 F ou 1525-1904 EUROS
+      6 / 12501-15000 F ou 1905-2289 EUROS
+      7 / 15001-20000 F ou 2290-3049 EUROS
+      8 / 20001-25000 F ou 3050-3809 EUROS
+      9 / 25001-40000 F ou 3810-6099 EUROS
+     10 / > 40000 F ou > 6099 EUROS
+     11 / REFUS
+     12 / DK/NA
+
+V = RS26 M(1-25) "RS26. Dans votre foyer, possède-t-on au au moins ... "
+F = Saisie(46-70 / parRang)
+L = 1 - 25
+      1 / ...UN TELEPHONE FIXE (AVEC OU SANS FIL)
+      2 / ...UN TELEPHONE MOBILE (OU PORTABLE)
+      3 / ...UNE BAIGNOIRE
+      4 / ...UN LAVE-VAISSELLE
+      5 / ...UNE SEULE VOITURE
+      6 / ...PLUSIEURS VOITURES
+      7 / ...UNE CHAINE HIFI
+      8 / ...UNE PLATINE LASER (AUDIO)
+      9 / ...UN AUTO-RADIO
+     10 / ...UN MINITEL
+     11 / ...UN MICRO-ORDINATEUR
+     12 / ...UN FAX
+     13 / ...UN PIANO
+     14 / ...UNE CARTE DE CREDIT (type carte bleue)
+     15 / ...UNE ANTENNE PARABOLIQUE / UNE PARABOLE
+     16 / ...UNE TELEVISION
+     17 / ...UN MAGNETOSCOPE
+     18 / ...UN APPAREIL PHOTO
+     19 / ...UN CAMESCOPE
+     20 / ...UNE PERCEUSE ELECTRIQUE
+     21 / ...UN GRILLE PAIN ELECTRIQUE
+     22 / ...UN FOUR A MICRO-ONDE
+     23 / ...UNE RESIDENCE SECONDAIRE
+     24 / [rien de tout cela]
+     25 / [refus / s.r]
+
+V = RS26B M(1-5) "RS26B- Votre foyer possède un micro, possédez-vous également... "
+F = Saisie(71-75 / parRang)
+L = 1 - 5
+      1 / - une imprimante
+      2 / - un modem
+      3 / - un CD-ROM
+      4 / - un DVD-ROM
+      5 / [rien de cela]
+
+V = RS30 S(1-2) "RS30. Etes-vous le responsable des achats au sein de votre foyer ? "
+F = Saisie(76)
+L = 1 - 2
+      1 / Oui
+      2 / Non
+
+V = XCSPI S(1-12) "RECOD PROFESSION DE L'INTERVIEWE "
+F = Saisie(77-78)
+L = 1 - 12
+      1 / AGRICULTEUR EXPLOITANT
+      2 / ARTISAN
+      3 / COMMERçANT
+      4 / CHEF D'ENTREPRISE
+      5 / PROFESSION LIBERALE
+      6 / CADRE, PROF. INTELLEC. SUP.
+      7 / CONTREMAITRE, AGENT DE MAITRISE
+      8 / TECHNICIEN
+      9 / AUTRE PROFESSION INTERMEDIAIRE
+     10 / EMPLOYE
+     11 / OUVRIER QUALIFIE
+     12 / OUVRIER NON QUALIFIE
+
+V = XCSPC S(1-12) "RECOD PROFESSION DU CHEF DE FAMILLE "
+F = Saisie(79-80)
+L = 1 - 12
+      1 / AGRICULTEUR EXPLOITANT
+      2 / ARTISAN
+      3 / COMMERçANT
+      4 / CHEF D'ENTREPRISE
+      5 / PROFESSION LIBERALE
+      6 / CADRE, PROF. INTELLEC. SUP.
+      7 / CONTREMAITRE, AGENT DE MAITRISE
+      8 / TECHNICIEN
+      9 / AUTRE PROFESSION INTERMEDIAIRE
+     10 / EMPLOYE
+     11 / OUVRIER QUALIFIE
+     12 / OUVRIER NON QUALIFIE
+
+V = PCSI1 S(1-16) "PROFESSION DE L'INTERVIEWE"
+F = Saisie(81-82)
+L = 1 - 16
+      1 / Agriculteur exploitant
+      2 / Artisan
+      3 / Commerçant
+      4 / Chef d'entreprise
+      5 / Profession libérale
+      6 / Cadre, prof. intellec. sup.
+      7 / Contremaître, agent de maîtrise
+      8 / Technicien
+      9 / Autre profession intermédiaire
+     10 / Employé
+     11 / Ouvrier qualifié
+     12 / Ouvrier non qualifié
+     13 / Etudiant/lycéen
+     14 / Retraité
+     15 / Autre inactif
+     16 / Chômeur 1 er emploi
+    Rebut / NSP-SR
+
+V = PCSC2 S(1-16) "PROFESSION DU CHEF DE FAMILLE"
+F = Saisie(83-84)
+L = 1 - 16
+      1 / Agriculteur exploitant
+      2 / Artisan
+      3 / Commerçant
+      4 / Chef d'entreprise
+      5 / Profession libérale
+      6 / Cadre, prof. intellec. sup.
+      7 / Contremaître, agent de maîtrise
+      8 / Technicien
+      9 / Autre profession intermédiaire
+     10 / Employé
+     11 / Ouvrier qualifié
+     12 / Ouvrier non qualifié
+     13 / Etudiant/lycéen
+     14 / Retraité
+     15 / Autre inactif
+     16 / Chômeur 1 er emploi
+    Rebut / NSP-SR
+
+V = PCSI S(1-6) "Profession de la personne interviewée"
+F = Saisie(85)
+L = 1 - 6
+      1 / Agriculteur
+      2 / Artisan - commerçant
+      3 / Cadre
+      4 / Profession inter., employé
+      5 / Ouvrier
+      6 / Inactif
+    Rebut / NSP-SR
+
+V = PCSC S(1-6) "Profession du chef de famille"
+F = Saisie(86)
+L = 1 - 6
+      1 / Agriculteur
+      2 / Artisan - commerçant
+      3 / Cadre
+      4 / Profession inter., employé
+      5 / Ouvrier
+      6 / Inactif
+    Rebut / NSP-SR
+
+V = E15 S(1-6) "Nombre d'enfants de moins de 15 ans"
+F = Saisie(87)
+L = 1 - 6
+      1 / aucun
+      2 / 1
+      3 / 2
+      4 / 3
+      5 / 4
+      6 / 5 & +
+    Rebut / AUCUN
+
+V = STAN S(1-3) "STANDING"
+F = Saisie(88)
+L = 1 - 3
+      1 / MODESTE
+      2 / MOYEN
+      3 / AISE
+
+V = PIP Q "WEIGHTING FACTOR"
+F = Saisie(89-96)
+
+V = K1 S(1-5) "K1.Changeons de sujet. Nous allons maintenant parler de l'Euro et plus particulière ment de la circulation des pièces dans la zone euro. J'aimerais que nous regardions ensemble si vous-même vous av ez dans votre porte-monnaie ou sur vous des pièces en Eur"
+F = Saisie(97)
+L = 1 - 5
+      1 / Oui, accepte de montrer les pièces
+      2 / Non, déclare ne pas avoir de pièces Euro (françaises ou étra ngères)
+      3 / Non, refuse de montrer les pièces
+      4 / Non, autre cas
+      5 / [nsp]
+
+V = BL1 L(4) "BL1"
+F = Saisie(98-101)
+
+V = K1L1 L(60) "K1b. Précisez : "
+F = Saisie(102-161)
+
+V = K1L2 L(4) "K1L2"
+F = Saisie(162-165)
+
+V = K3 M(1-13) "K3. ENQUETEUR : UNE FOIS LES PIECES DE L'INTERVIEWE POSEES, VOUS DEVEZ REGAR DER SUR LA PLANCHE QUELS SONT LES PAYS OU IL Y A DES PIECES DEPOSEES PUIS ENREGISTRER SES PAYS. VOUS NE DEVEZ PAS TOUCHE R AUX PIECES POUR LE MOMENT. S'IL Y A DES PIECES QUI N'ON"
+F = Saisie(166-178 / parRang)
+L = 1 - 13
+      1 / FRANCE
+      2 / ALLEMAGNE
+      3 / AUTRICHE
+      4 / BELGIQUE
+      5 / ESPAGNE
+      6 / FINLANDE
+      7 / GRECE
+      8 / IRLANDE
+      9 / ITALIE
+     10 / LUXEMBOURG
+     11 / PAYS-BAS / HOLLANDE
+     12 / PORTUGAL
+     13 / AUTRES EUROS NON IDENTIFIES
+
+V = QFRA[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FRANCE "
+F = Saisie(179-180 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QALL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ALLEMAGNE "
+F = Saisie(195-196 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QAUT[8] S(0-99) "ENREGISTRER LES PIECES DE : L'AUTRICHE "
+F = Saisie(211-212 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QBEL[8] S(0-99) "ENREGISTRER LES PIECES DE : LA BELGIQUE "
+F = Saisie(227-228 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QESP[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ESPAGNE "
+F = Saisie(243-244 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QFIN[8] S(0-99) "ENREGISTRER LES PIECES DE : LA FINLANDE "
+F = Saisie(259-260 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QGRE[8] S(0-99) "ENREGISTRER LES PIECES DE : LA GRECE "
+F = Saisie(275-276 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QIRL[8] S(0-99) "ENREGISTRER LES PIECES DE : L'IRLANDE "
+F = Saisie(291-292 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QITA[8] S(0-99) "ENREGISTRER LES PIECES DE : L'ITALIE "
+F = Saisie(307-308 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QLUX[8] S(0-99) "ENREGISTRER LES PIECES DE : LE LUXEMBOURG "
+F = Saisie(323-324 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPAYB[8] S(0-99) "ENREGISTRER LES PIECES DE : LES PAYS-BAS / LA HOLLANDE "
+F = Saisie(339-340 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = QPOR[8] S(0-99) "ENREGISTRER LES PIECES DE : LE PORTUGAL "
+F = Saisie(355-356 / Pas=2)
+O = 
+      1 / 1 centime
+      2 / 2 centimes
+      3 / 5 centimes
+      4 / 10 centimes
+      5 / 20 centimes
+      6 / 50 centimes
+      7 / 1 euro
+      8 / 2 euros
+
+V = Q19 Q "Report du code de la Commune Insee. "
+F = Saisie(371-373)
+
+V = K5 S(1-2) "K5. Stockez-vous des pièces en Euros dans d'autres endroits que dans votre porte-monnaie et dont vous vous ne vous serve z pas (comme par exemple dans une tirelire, un collector,... )? "
+F = Saisie(374)
+L = 1 - 2
+      1 / Oui
+      2 / Non
+
+V = K6 S(1-5) "K6. Combien de pièces en Euros avez-vous stockées ? Diriez-vous... "
+F = Saisie(375)
+L = 1 - 5
+      1 / ...moins de 10
+      2 / ...10 à 19
+      3 / ...20 à 49
+      4 / ...50 ou plus
+      5 / [nsp]
+
+V = K7 S(1-5) "K7. Quel type de pièce avez-vous stockées ? Diriez-vous... "
+F = Saisie(376)
+L = 1 - 5
+      1 / ...essentiellement des Euros avec une face étrangère (quelqu e soit la valeur)
+      2 / ...essentiellement des petites pièces de 1 à 5 centimes d'Eu ro (étrangères ou françaises)
+      3 / ...tout type de pièces
+      4 / [autre]
+      5 / [nsp]
+
+
