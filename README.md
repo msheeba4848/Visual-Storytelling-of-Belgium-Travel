@@ -63,17 +63,23 @@ provides a series of steps to follow to create a data story:
 
 ## The dataset
 
+The dataset is described in the [paper contained in the `src-data/`
+directory](src-data/paper.pdf). All of the files described in the paper
+(the survey results and metadata for various countries and years.) Read
+the paper.
+
 ## Story and visualization requirements
 
 - The story should be between one and two pages long (500 to 1,000 words
   since it’s a single HTML page.)
+- It is up to you to decide what data to use and what to focus on.
 - Choose one or more genres described in [Segel and Heer’s Narrative
   Visualization: Telling Stories with Data
-  paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf)
-  :::{.callout-important} Some of the genres may be more difficult to
+  paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for
+  your story. **Note:** Some of the genres may be more difficult to
   implement for a proper experience. You may develop your own CSS
   templates to implement more complex stories, and that decision is up
-  to you. That is not a requirement. :::
+  to you.
 - The story must be *author-driven*, **not** *reader-driven*.
 - There must be a minimum of three visualizations and a maximum of five
   and they must be connected to the story. MV Note: each should be a
@@ -107,7 +113,15 @@ provides a series of steps to follow to create a data story:
   in the `code/` directory in one of two ways:
   - Including a script in a chunk by using a code chunk that looks like
     this:
-    `tvuzr     #| echo: true     #| eval: true      #| file: code/myscript.R`
+
+    ```` markdown
+    ```{r}
+    #| echo: true
+    #| eval: true 
+    #| file: code/myscript.R
+    ```
+    ````
+
   - Including other Quarto documents (not scripts) by using the
     following notation: `{{< include code/name-of-qmd.qmd >}}`
 

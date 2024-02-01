@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -128,12 +162,14 @@ Warning
 </section>
 <section id="the-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="the-dataset">The dataset</h2>
+<p>The dataset is described in the <a href="src-data/paper.pdf">paper contained in the <code>src-data/</code> directory</a>. All of the files described in the paper (the survey results and metadata for various countries and years.) Read the paper.</p>
 </section>
 <section id="story-and-visualization-requirements" class="level2">
 <h2 class="anchored" data-anchor-id="story-and-visualization-requirements">Story and visualization requirements</h2>
 <ul>
 <li>The story should be between one and two pages long (500 to 1,000 words since it’s a single HTML page.)</li>
-<li>Choose one or more genres described in <a href="http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf">Segel and Heer’s Narrative Visualization: Telling Stories with Data paper.</a> :::{.callout-important} Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you. That is not a requirement. :::</li>
+<li>It is up to you to decide what data to use and what to focus on.</li>
+<li>Choose one or more genres described in <a href="http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf">Segel and Heer’s Narrative Visualization: Telling Stories with Data paper.</a> for your story. <strong>Note:</strong> Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you.</li>
 <li>The story must be <em>author-driven</em>, <strong>not</strong> <em>reader-driven</em>.</li>
 <li>There must be a minimum of three visualizations and a maximum of five and they must be connected to the story. MV Note: each should be a different view?</li>
 <li>Your visualizations must:
@@ -157,8 +193,13 @@ Warning
 <li>You do not need to do everything in the single Quarto file at the root level. You can work on the visualizations, data processing, etc. in individual <code>R</code> or <code>Python</code> scripts, or in other Quarto documents in the <code>code/</code> directory.</li>
 <li>When you render the Quarto file, you can include your other documents in the <code>code/</code> directory in one of two ways:
 <ul>
-<li>Including a script in a chunk by using a code chunk that looks like this: <code>gyigd     #| echo: true     #| eval: true      #| file: code/myscript.R</code></li>
-<li>Including other Quarto documents (not scripts) by using the following notation: <code>{{&lt; include code/name-of-qmd.qmd &gt;}}</code></li>
+<li><p>Including a script in a chunk by using a code chunk that looks like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| file: code/myscript.R</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Including other Quarto documents (not scripts) by using the following notation: <code>{{&lt; include code/name-of-qmd.qmd &gt;}}</code></p></li>
 </ul></li>
 </ul>
 </section>

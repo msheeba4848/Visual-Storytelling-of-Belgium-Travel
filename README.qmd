@@ -56,16 +56,14 @@ A reminder that all work is personal work. You may discuss topics but you may no
 
 ## The dataset
 
-
+The dataset is described in the [paper contained in the `src-data/` directory](src-data/paper.pdf). All of the files described in the paper (the survey results and metadata for various countries and years.) Read the paper.
 
  
 ## Story and visualization requirements
 
 * The story should be between one and two pages long (500 to 1,000 words since it's a single HTML page.) 
-* Choose one or more genres described in [Segel and Heer's Narrative Visualization: Telling Stories with Data paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf)
-  :::{.callout-important}
-  Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you. That is not a requirement.
-  :::
+* It is up to you to decide what data to use and what to focus on.
+* Choose one or more genres described in [Segel and Heer's Narrative Visualization: Telling Stories with Data paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for your story. **Note:** Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you. 
 * The story must be _author-driven_, **not** _reader-driven_.
 * There must be a minimum of three visualizations and a maximum of five and they must be connected to the story. MV Note: each should be a different view?
 * Your visualizations must:
@@ -85,11 +83,13 @@ A reminder that all work is personal work. You may discuss topics but you may no
 * You do not need to do everything in the single Quarto file at the root level. You can work on the visualizations, data processing, etc. in individual `R` or `Python` scripts, or in other Quarto documents in the `code/` directory.
 * When you render the Quarto file, you can include your other documents in the `code/` directory in one of two ways:
   * Including a script in a chunk by using a code chunk that looks like this:
+  
       ```{{r}}
       #| echo: true
       #| eval: true 
       #| file: code/myscript.R
       ```
+  
   * Including other Quarto documents (not scripts) by using the following notation: `{{< include code/name-of-qmd.qmd >}}`
 
 ## Rubric
