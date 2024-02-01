@@ -63,7 +63,7 @@ The dataset is described in the [paper contained in the `src-data/` directory](s
 
 * The story should be between one and two pages long (500 to 1,000 words since it's a single HTML page.) 
 * It is up to you to decide what data to use and what to focus on.
-* Choose one or more genres described in [Segel and Heer's Narrative Visualization: Telling Stories with Data paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for your story. **Note:** Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you. 
+* Choose one or more genres described in [Segel and Heer's Narrative Visualization: Telling Stories with Data paper](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for your story. **Note:** Some of the genres may be more difficult to implement for a proper experience. You may develop your own CSS templates to implement more complex stories, and that decision is up to you. 
 * The story must be _author-driven_, **not** _reader-driven_.
 * There must be a minimum of three visualizations and a maximum of five and they must be connected to the story. MV Note: each should be a different view?
 * Your visualizations must:

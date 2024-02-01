@@ -75,7 +75,7 @@ the paper.
 - It is up to you to decide what data to use and what to focus on.
 - Choose one or more genres described in [Segel and Heer’s Narrative
   Visualization: Telling Stories with Data
-  paper.](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for
+  paper](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for
   your story. **Note:** Some of the genres may be more difficult to
   implement for a proper experience. You may develop your own CSS
   templates to implement more complex stories, and that decision is up
