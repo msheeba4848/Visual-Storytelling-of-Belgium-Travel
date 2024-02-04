@@ -1,4 +1,4 @@
-# Assignment: Write a data driven story
+# Assignment: Write a data-driven story
 
 <div>
 
@@ -15,10 +15,10 @@ about the ideas discussed this week in class. You will use the [provided
 dataset](#the-dataset). You will create the visualizations to support
 your story.
 
-- 3 to 5 vizs
-- focus on author driven
-- read the segel/heer paper and choose a genre (warnign, some genres may
-  be more complicated to imeplement)
+- 3 to 5 visualizations
+- focus on author-driven engagement style
+- read the segel/heer paper and choose a genre (warning, some genres may
+  be more complicated to implement)
 
 This [Harvard Business Review blog
 post](https://online.hbs.edu/blog/post/data-storytelling) provides a
@@ -82,7 +82,7 @@ the paper.
   to you.
 - The story must be *author-driven*, **not** *reader-driven*.
 - There must be a minimum of three visualizations and a maximum of five
-  and they must be connected to the story. MV Note: each should be a
+  and they must be connected to the story. Each visualization must be a distinct question/analysis step - creativity and originality here is important. MV Note: each should be a
   different view?
 - Your visualizations must:
   - have a caption (using the chunk option `fig-cap`) describing the
@@ -132,9 +132,9 @@ the paper.
 | Breadth of Exploration   | More than 3 questions were initially asked, and target substantially different portions/aspects of the data.                                            | At least 3 questions were initially asked of the data, but there is some overlap between questions.                                  | Fewer than 3 initial questions were posed of the data.                                                        |
 | Depth of Exploration     | A sufficient number of follow-up questions were asked to yield insights that helped to more deeply explore the initial questions.                       | Some follow-up questions were asked, but they did not take the analysis much deeper than the initial questions.                      | No follow-up questions were asked after answering the initial questions.                                      |
 | Data Quality             | Data quality was thoroughly assessed with extensive profiling of fields and records.                                                                    | Simple checks were conducted on only a handful of fields or records.                                                                 | Little or no evidence that data quality was assessed.                                                         |
-| Visualizations           | More than 10 visualizations were produced, and a variety of marks and encodings were explored. All design decisions were both expressive and effective. | At least 10 visualizations were produced. The visual encodings chosen were largely effective and expressive, but some errors remain. | Several ineffective or inexpressive design choices are made. Fewer than 10 visualizations have been produced. |
-| Data Transformation      | More advanced transformation were used to extend the dataset in interesting or useful ways.                                                             | Simple transforms (e.g., sorting, filtering) were primarily used.                                                                    | The raw dataset was used directly, with little to no additional transformation.                               |
-| Captions                 | Captions richly describe the visualizations and contextualize the insight within the story.                                                             | Captions do a good job describing the visualizations, but could be better connected to the story.                                    | Captions are missing, overly brief, or shallow.                                                               |
-| Writing                  | Writing is xxxxx. S                                                                                                                                     | Writing is xxxxxxx                                                                                                                   | Writing is xxxxx.                                                                                             |
-| Story                    | The story is engaging and understandable. The audience learns something new.                                                                            | The story is good.                                                                                                                   | The story has no logical beginning or end.                                                                    |
+| Visualizations           | 3-5 visualizations were produced, and a variety of marks and encodings were explored. All design decisions were both expressive and effective. | 3-5 visualizations were produced. The visual encodings chosen were largely effective and expressive, but some errors remain. | Several ineffective or inexpressive design choices are made.Fewer than 3 or more than 5 visualizations were produced. |
+| Data Transformation      | More advanced transformations were used to extend the dataset in interesting or useful ways.                                                             | Simple transforms (e.g., sorting, filtering) were primarily used.                                                                    | The raw dataset was used directly, with little to no additional transformation.                               |
+| Captions                 | Captions richly describe the visualizations and contextualize the insight within the story.                                                             | Captions do a good job describing the visualizations but could be better connected to the story.                                    | Captions are missing, overly brief, or shallow.                                                               |
+| Writing                  | Writing is xxxxx. S                                                                                                                                     | Writing is satisfactory.                                                                                                                   | Writing is poorly completed.                                                                                             |
+| Story                    | The story is engaging and understandable. The audience learns something new.                                                                            | The story is good.                                                                                                                   | The story has no logical beginning, middle, and end.                                                                    |
 | Creativity & Originality | You exceeded the parameters of the assignment, with original insights or a particularly engaging design.                                                | You met all the parameters of the assignment.                                                                                        | You met most of the parameters of the assignment.                                                             |
