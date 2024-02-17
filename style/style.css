@@ -1,0 +1,63 @@
+/* Basic Reset */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', sans-serif; /* Montserrat font for body text */
+    line-height: 1.6;
+    color: #000; /* Set body text color to black */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Magazine Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Main Title Style */
+.header h1 {
+    font-family: 'Courier New', monospace; /* Monospace font for the main title */
+    font-size: 3em;
+    text-align: center;
+    color: #8B4513; /* Set color for main title */
+    padding: 20px 0;
+}
+
+/* Header Styles (for subheadings) */
+h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Serif font for subheadings */
+    color: #333;
+}
+
+h2 {
+    font-size: 2em; /* Example size, adjust as needed */
+    margin-bottom: 10px;
+}
+
+/* Adjust sizes for h3, h4, h5, h6 as needed */
+
+/* Other Styles (Navigation, Main Content, Sidebar, Footer) */
+/* ... (Your existing styles for these sections) ... */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .article, .sidebar {
+        margin-right: 0;
+    }
+}
+
+/* Specific styling for #hello */
+#hello {
+    color: #8B4513; /* Set color for #hello to brown */
+}

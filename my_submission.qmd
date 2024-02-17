@@ -1,0 +1,54 @@
+---
+title: "Is Belgium Travelling Enough?"
+format:
+    html:
+        css: style/style.css
+        toc: true
+        embed-resources: true
+---
+
+# How do Movements Work?
+
+A intriguing aspect of the financial dynamics of the Eurozone is the movement of euro coins across borders, especially between Belgium, France, and Germany. Since these three nations have some of the biggest economies in the Eurozone, there is a lot of cross-border trade in products and people, which naturally promotes the circulation of euro coins [1]. Due to the significant amount of trade and tourism that occurs between Germany and its neighbours, France and Belgium [2], are common places to find German euro coins, which are easily recognised by their unique national designs. Likewise, one can frequently find French and Belgium euros in Germany, each with their own distinctive national emblems. The shared currency facilitates this circulation and makes cross-border financial transactions easy. European individuals from France, Germany, and Belgium were surveyed by the Euro Spatial Diffussion Observatory (EDSO) database about the number of coins in their wallets, the country of minting each coin, and several socioeconomic topics. socioeconomic inquiries about age, sex, occupation, and household size to understand the movement. 
+
+# Coincidal Journeys 
+
+As we understand, each coin is a piece of history and national identity for those that use it. May it be in terms of the coin they use or wherever it is minted in. Though these coins traverse borders revealing the underlying dynamics of trade, monetary policy, and international relations, they can also give us the socio-demographic information of who use it. 
+
+Figure 1 in the graph showcases that France holds the most coins in comparison to Belgium and Germany, thus holding more coins of other European Countries too. It can be attributed to the central position of France at the European Union and its status as a major tourist destination and due to it's extensive relationships with other countries. Additionally, tourism is also an important aspect of the French Economy which is greater than Germany and Belgium, in additional to it's central georgraphic position. 
+
+
+![](imgs/1.png)
+
+In terms of Gender, we see that there is almost equal distribution of the denominations when it comes to few demoninations and greater disparity when it comes to the lowest distributions such as 1 cent, 2 cents and 5 cents. This is interesting to look it as the patterns of usage could play an important role as well, as lower denominations due to the rising inflation and costs are used less frequently.
+
+![](imgs/2.png)
+
+
+# Tracing Coin Trails
+
+As Belgium and France were interesting to compare as categorised as 'Least' and 'Most' respectively. Understanding the association between the Gender, the country it was Minted at and the Country it is circulating in terms of the number of coins will showcase the distribution of these socio-demographic variables. Hence, we see that most coins held by Woman and Man in Belgium and France together was again most in France. This could stem from greater small transaction habits of women and occupational factors amongst others could play a main role. 
+
+![](imgs/3.png)
+
+Additionally, trying to understand the relationship between the country the coins are circulating in and the country it was originally minted at, we again see that France has more coins of itself than Belgium does. This could be due to the greater population of France than Belgium, tourism, and greater geogaphical proximity of France and a stronger economic position of France in comparison.
+
+![](imgs/4.png)
+
+# Clinking Through Belgium Houses
+
+The population and the economy size of Belgium being smaller than Germany and France could contribute lower circulation of coins, and due to lesser tourist-driven circulation of cash coupled with it's geographical location. Hence, the final socio-demographic aspect to be explored here in terms of the understanding the educational preferences of the Head of the Household and the Respondent in terms of finding who held the most coins. We see that majority of the coins were held by those that held the same nature of the job, of being a Non Clerical work domain such as a Nurse, Police or Teacher and of being a Pensioner/Retired. This translates two forms of information, firstly that the respondent is the head of the family and secondly that those with same profession held the most amount of coins hinting towards the presence of correlation between the Job and the Denominaton. 
+
+![](imgs/5.png)
+
+# What do we think?
+
+Therefore, whilst tracking the movement of the coins across the Eurozone, it must be proceeded with caution as there are other nuanced aspects to consider, such as the state of the economy, spending patterns of its citizens, socio-economic factors of the country, the Central Bank's preference in terms of coins, the cross-border networks, etc. 
+
+# References
+
+[1] https://www.sciencedirect.com/science/article/pii/S1703494915303595?casa_token=gVw8GM7OXQEAAAAA:9Ux5TqsjDltGlrTp2D0sBOn43kw7MAxP2zwiTNeqItYhq2-qvDuRqZR5zPxacqCf1uqNK1IORQ
+[2] https://www.tandfonline.com/doi/full/10.1080/09644008.2021.2002847?casa_token=ZqM1uRmQno0AAAAA%3ATYA8ZejJPh6NIBY5INU4M5qAHniyVm65URxjL6myYfhHqcw35hwRthQRuhwt5v3kQTOJf-8xpzSZ
+[3] 
+
+
