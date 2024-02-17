@@ -19,32 +19,31 @@ As we understand, each coin is a piece of history and national identity for thos
 Figure 1 in the graph showcases that France holds the most coins in comparison to Belgium and Germany, thus holding more coins of other European Countries too. It can be attributed to the central position of France at the European Union and its status as a major tourist destination and due to it's extensive relationships with other countries. Additionally, tourism is also an important aspect of the French Economy which is greater than Germany and Belgium, in additional to it's central georgraphic position [4]
 
 
-![](code/imgs/1.png)
+![Figure 1: This also about the Non-Domestic transactions on basis of the Domestic Country. France is shown to hold most Non-Domestic Transactions, with varied economic and socio-developmental aspects such as the size of the economy, the geopolitical position, and the geographical location. It is followed by Germany and then Belgium.](code/imgs/1.png)
 
 In terms of Gender, we see that there is almost equal distribution of the denominations when it comes to few demoninations and greater disparity when it comes to the lowest distributions such as 1 cent, 2 cents and 5 cents. This is interesting to look it as the patterns of usage could play an important role as well, as lower denominations due to the rising inflation and costs are used less frequently [5].
 
-![](code/imgs/2.png)
-
+![Figure 2: On basis of the transactions based on Gender and the Denominations, we see that there is more disparity within the smaller denominations than the larger denominations. This can be accounted to role of women accounting for more transactions, amongst other reasons.](code/imgs/2.png)
 
 ## Tracing Coin Trails
 
 As Belgium and France were interesting to compare as categorised as 'Least' and 'Most' respectively. Understanding the association between the Gender, the country it was Minted at and the Country it is circulating in terms of the number of coins will showcase the distribution of these socio-demographic variables. Hence, we see that most coins held by Woman and Man in Belgium and France together was again most in France. This could stem from greater small transaction habits of women and occupational factors amongst others could play a main role [6].
 
-![](code/imgs/3.png)
+![Figure 3: In terms of the distribution of coins in terms of Gender again and keeping in mind the non-domestic countries, we see that Women held most non-domestic euros than Men, yet this was the most again in terms of France.](code/imgs/3.png)
 
 Additionally, trying to understand the relationship between the country the coins are circulating in and the country it was originally minted at, we again see that France has more coins of itself than Belgium does. This could be due to the greater population of France than Belgium, tourism, and greater geogaphical proximity of France and a stronger economic position of France in comparison.
 
-![](code/imgs/4.png)
+![Figure 4: The overall distributions of coins in terms of the Domestic and Non-Domestic Country again highlights that it is indeed France that holds the most coins of itself in terms of Belgium and France.](code/imgs/4.png)
 
 ## Clinking Through Belgium Houses
 
 The population and the economy size of Belgium being smaller than Germany and France could contribute lower circulation of coins, and due to lesser tourist-driven circulation of cash coupled with it's geographical location. Hence, the final socio-demographic aspect to be explored here in terms of the understanding the educational preferences of the Head of the Household and the Respondent in terms of finding who held the most coins. We see that majority of the coins were held by those that held the same nature of the job, of being a Non Clerical work domain such as a Nurse, Police or Teacher and of being a Pensioner/Retired. This translates two forms of information, firstly that the respondent is the head of the family and secondly that those with same profession held the most amount of coins hinting towards the presence of correlation between the Job and the Denominaton [7]
 
-![](code/imgs/5.png)
+![Figure 5: In this aspect, the focus was emphasised more on understanding if the Household Profession and the Respondant's profession played a role in Denomination. Higher denominations were mainly held by those having the same position. This showcases either that the respondant and the head of the household are the same, or that there is association between profession and the denomination.](code/imgs/5.png)
 
 ## What do we think?
 
-Therefore, whilst tracking the movement of the coins across the Eurozone, it must be proceeded with caution as there are other nuanced aspects to consider, such as the state of the economy, spending patterns of its citizens, socio-economic factors of the country, the Central Bank's preference in terms of coins, the cross-border networks, etc. 
+Therefore, whilst tracking the movement of the coins across the Eurozone, it must be proceeded with caution as there are other nuanced aspects to consider, such as the state of the economy, spending patterns of its citizens, socio-economic factors of the country, the Central Bank's preference in terms of coins, the cross-border networks, etc. Hence, although the small-scale transactions and the social factors play an important role, there are other important factors to consider whilst comparing economies.
 
 ## References
 
