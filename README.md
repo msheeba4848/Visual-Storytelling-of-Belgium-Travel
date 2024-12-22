@@ -1,141 +1,81 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hrq-VL6u)
-# Assignment: Write a data-driven story
+# Unearthing Stories from Euro Coin Circulation: Advanced Data Visualizations
 
-<div>
+## The Bigger Picture: Exploring Euro Coin Movement Across Borders
 
-> **Note**
->
-> Please read all the instructions here carefully before proceeding.
+The movement of euro coins across the Eurozone offers a fascinating lens through which to study economic, cultural, and behavioral dynamics. To communicate these insights effectively, advanced data visualizations have been utilized, not only to present the data but also to tell compelling stories. Visualizations allow us to uncover hidden patterns, highlight contrasts, and engage with nuanced insights that numbers alone can't convey.
 
-</div>
+---
 
-## Assignment overview
+## Key Themes Enhanced Through Visualization
 
-For this assignment, you will write a short data-driven story thinking
-about the ideas discussed this week in class. You will use the [provided
-dataset](#the-dataset). You will create the visualizations to support
-your story.
+### 1. **Economic Nodes in Coin Movement**
+Using **bar plots** and **count plots**, we highlighted the dominant role of France in coin circulation compared to Belgium and Germany. A count plot segmented by country and minted location visually emphasizes the extent of foreign coins in domestic markets. For instance, France's large share of non-domestic coins underscores its central role in the Eurozone's economic ecosystem.
 
-- 3 to 5 visualizations with descriptive narrative
-- focus on author-driven engagement style
-- read the segel/heer paper and choose a genre (warning, some genres may
-  be more complicated to implement)
+### 2. **Gender Dynamics**
+A **stacked bar chart** comparing denominations by gender revealed:
+- Women frequently hold smaller denominations (e.g., 1c, 2c), possibly tied to daily household purchases.
+- Men are more likely to hold larger denominations (e.g., €1, €2), reflecting occupational roles or transaction preferences.
 
-This [Harvard Business Review blog
-post](https://online.hbs.edu/blog/post/data-storytelling) provides a
-good summary of the components required for data storytelling:
+This visualization brought clarity to subtle but significant behavioral differences.
 
-- **Data:** Thorough analysis of accurate, complete data serves as the
-  foundation of your data story. Analyzing data using descriptive,
-  diagnostic, predictive, and prescriptive analysis can enable you to
-  understand its full picture.
-- **Narrative:** A verbal or written narrative, also called a storyline,
-  is used to communicate insights gleaned from data, the context
-  surrounding it, and actions you recommend and aim to inspire in your
-  audience.
-- **Visualizations:** Visual representations of your data and narrative
-  can be useful for communicating its story clearly and memorably. These
-  can be charts, graphs, diagrams, pictures, or videos.
+### 3. **Age Distribution**
+A **histogram of age distribution** uncovered an interesting age-related pattern:
+- Young adults and students were key drivers of foreign coin circulation.
+- Older demographics, particularly pensioners, dominated higher-value coins, reflecting their economic stability.
 
-[This article by a company called
-Toughspot](https://www.thoughtspot.com/data-trends/best-practices/data-storytelling)
-provides a series of steps to follow to create a data story:
+This chart showcased how different life stages influence spending and saving habits.
 
-- Find the story within the data
-- Consider your audience
-- Determine what data matters
-- Analyze the data and find insights
-- Identify the most effective data visualizations
-- Provide context
-- Structure your story
-- Edit until the story is clear and concise
+### 4. **Occupational Coin Circulation**
+We employed a **heatmap** to analyze the relationship between the professions of respondents and heads of households. The heatmap revealed:
+- Occupations such as "Pensioner" and "Nurse/Police/Teacher" showed strong correlations with higher-value denominations.
+- This visualization provided a unique perspective on how professions and household roles impact financial behavior.
 
-<div>
+---
 
-> **Warning**
->
-> A reminder that all work is personal work. You may discuss topics but
-> you may not use code from other students and colleagues without
-> attribution. Any code that you use from other sources like the
-> internet must be cited with the appropriate hyperlink or other
-> reference.
+## Advanced Visualizations in Action
 
-</div>
+### 1. **Non-Domestic Transactions by Country**
+**Visualization Type**: Count plot with hue segmentation for minted countries.
+- **Purpose**: Showcases the distribution of foreign coins in each country.
+- **Key Insights**: France leads in foreign coin circulation, followed by Germany and Belgium. This pattern reflects France's geographic centrality and economic scale.
 
-## The dataset
+### 2. **Gender and Denominations**
+**Visualization Type**: Bar plot with hue differentiation for gender.
+- **Purpose**: Highlights gender-based spending and saving patterns.
+- **Key Insights**: Women dominate smaller denominations, while men show a preference for higher denominations.
 
-The dataset is described in the [paper contained in the `src-data/`
-directory](src-data/paper.pdf). All of the files described in the paper
-(the survey results and metadata for various countries and years.) Read
-the paper.
+### 3. **Association of Employment and Denomination**
+**Visualization Type**: Heatmap of pivoted data.
+- **Purpose**: Analyzes the relationship between the employment of respondents and household heads in terms of denomination counts.
+- **Key Insights**: Specific professions such as "Craftsmen/Trader" and "Pensioner/Retired" exhibit strong associations with certain denominations, reflecting their financial habits and roles in the economy.
 
-## Story and visualization requirements
+### 4. **Domestic vs. Non-Domestic Transactions**
+**Visualization Type**: Bar plot comparing total euros by country with hue for non-domestic minted locations.
+- **Purpose**: Illustrates the volume of domestic versus non-domestic coin circulation.
+- **Key Insights**: France holds more domestic coins than its neighbors, reinforcing its robust economy and tourist-driven cash flows.
 
-- The story should be between one and two pages long (500 to 1,000 words
-  since it’s a single HTML page.)
-- It is up to you to decide what data to use and what to focus on.
-- Choose one or more genres described in [Segel and Heer’s Narrative
-  Visualization: Telling Stories with Data
-  paper](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf) for
-  your story. **Note:** Some of the genres may be more difficult to
-  implement for a proper experience. You may develop your own CSS
-  templates to implement more complex stories, and that decision is up
-  to you.
-- The story must be *author-driven*, **not** *reader-driven*.
-- There must be a minimum of three visualizations and a maximum of five
-  and they must be connected to the story. Each visualization must be a distinct question/analysis step - creativity and originality here is important. MV Note: each should be a
-  different view?
-- Your visualizations must:
-  - have a caption (using the chunk option `fig-cap`) describing the
-    purpose of the visualization within the context of the story
-  - be properly labeled, with axes labeled and units shown
-  - have any necessary annotations to help the viewer understand
-  - have a title
-  - use the themes you’ve developed, or improvements to them that you
-    have developed
-- Separate your sections with a level 2 header (`## ...`).
-- Make sure to spell and grammar check
+---
 
-## Submission and technical notes
+## Role of Grouping in Data Storytelling
 
-- The final deliverable must be a rendered Quarto HTML document called
-  named `my_submission.html` at the root level. The corresponding Quarto
-  document must be called `my_submission.qmd`.
-- You may use `R`, `Python`, or `Observable` at your discretion
-- Use the `code/` directory for all your work (except the Quarto
-  document.) Keep your code organized and commented. You may write a
-  `README.md` file within the `code/` subdirectory to provide additional
-  insight and context about your work.
-- You do not need to do everything in the single Quarto file at the root
-  level. You can work on the visualizations, data processing, etc. in
-  individual `R` or `Python` scripts, or in other Quarto documents in
-  the `code/` directory.
-- When you render the Quarto file, you can include your other documents
-  in the `code/` directory in one of two ways:
-  - Including a script in a chunk by using a code chunk that looks like
-    this:
+Grouping played a pivotal role in uncovering patterns and structuring insights:
+- **Country-Level Grouping**: By aggregating data at the country level, we highlighted the flow of coins between domestic and non-domestic economies, offering a macroeconomic perspective.
+- **Gender-Based Grouping**: Gender segmentation allowed us to observe nuanced behavioral differences in coin denomination preferences, with women favoring smaller denominations for everyday purchases.
+- **Occupation-Based Grouping**: Grouping by professions revealed associations between job types and coin denominations, providing insights into the financial behaviors tied to occupational roles.
+- **Age Segmentation**: Age grouping showcased the life-stage influence on financial transactions, with younger individuals contributing to coin circulation and older individuals holding higher-value coins.
 
-    ```` markdown
-    ```{r}
-    #| echo: true
-    #| eval: true 
-    #| file: code/myscript.R
-    ```
-    ````
+Grouping enriched the analysis by making it easier to identify and compare patterns within and across different dimensions.
 
-  - Including other Quarto documents (not scripts) by using the
-    following notation: `{{< include code/name-of-qmd.qmd >}}`
+---
 
-## Rubric
+## Key Takeaways from Data Visualizations
 
-| Component                | Excellent                                                                                                                                               | Satisfactory                                                                                                                         | Unsatisfactory                                                                                                |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Breadth of Exploration   | 3-5 effectively scoped questions that target substantially different portions/aspects of the data.                                            | 3-5 scoped questions  but there is some overlap between questions.                                  | Incomplete or too many questions were posed of the data.                                                        |
-| Depth of Exploration     | A sufficient number of follow-up questions were asked to yield insights that helped to more deeply explore the initial questions.                       | Some follow-up questions were asked, but they did not take the analysis much deeper than the initial questions.                      | No follow-up questions were asked after answering the initial questions.                                      |
-| Data Quality             | Data quality was thoroughly assessed with extensive profiling of fields and records.                                                                    | Simple checks were conducted on only a handful of fields or records.                                                                 | Little or no evidence that data quality was assessed.                                                         |
-| Visualizations           | 3-5 visualizations were produced, and a variety of marks and encodings were explored. All design decisions were both expressive and effective. | 3-5 visualizations were produced. The visual encodings chosen were largely effective and expressive, but some errors remain. | Several ineffective or inexpressive design choices are made.Fewer than 3 or more than 5 visualizations were produced. |
-| Data Transformation      | More advanced transformations were used to extend the dataset in interesting or useful ways.                                                             | Simple transforms (e.g., sorting, filtering) were primarily used.                                                                    | The raw dataset was used directly, with little to no additional transformation.                               |
-| Captions                 | Captions richly describe the visualizations and contextualize the insight within the story.                                                             | Captions do a good job describing the visualizations but could be better connected to the story.                                    | Captions are missing, overly brief, or shallow.                                                               |
-| Writing                  | Writing with high clarity, clear purpose, and compelling narrative.                                                                                                                                     | Writing is well-written and generally appropriate for the product.                                                                                                                   | Writing is poorly completed.                                                                                             |
-| Story                    | The story is engaging and understandable. The audience learns something new.                                                                            | The story is good.                                                                                                                   | The story has no logical beginning, middle, and end.                                                                    |
-| Creativity & Originality | You exceeded the parameters of the assignment, with original insights or a particularly engaging design.                                                | You met all the parameters of the assignment.                                                                                        | You met most of the parameters of the assignment.                                                             |
+- **Complex Stories Made Clear**: Advanced visualizations like heatmaps and segmented bar plots made it possible to decode complex relationships between variables such as gender, age, and occupational roles.
+- **Interactivity and Engagement**: Visualization choices ensured that viewers could not only see patterns but also understand their context and implications.
+- **Revealing Hidden Insights**: Through visual representation, patterns such as the dominance of women in small denominations or the occupational role in high-value coin holdings became apparent.
+
+---
+
+## Conclusion
+
+This analysis goes beyond numbers to embrace the storytelling power of advanced data visualizations. By leveraging grouping techniques and a variety of visualization styles, we unearthed fascinating insights into the interplay between economic systems and individual behaviors. These visual tools allowed us to navigate the complexity of euro coin movement with clarity and precision, making the data both accessible and engaging for diverse audiences.
