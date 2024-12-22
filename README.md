@@ -79,3 +79,8 @@ Grouping enriched the analysis by making it easier to identify and compare patte
 ## Conclusion
 
 This analysis goes beyond numbers to embrace the storytelling power of advanced data visualizations. By leveraging grouping techniques and a variety of visualization styles, we unearthed fascinating insights into the interplay between economic systems and individual behaviors. These visual tools allowed us to navigate the complexity of euro coin movement with clarity and precision, making the data both accessible and engaging for diverse audiences.
+
+---
+## License 
+
+This project is licensed under an **All Rights Reserved** license. Unauthorized use, distribution, or modification of the code is strictly prohibited. For inquiries or permission requests, please contact [sm3924@georgetown.edu or msheeba00@gmail.com].
